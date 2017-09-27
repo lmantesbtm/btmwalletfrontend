@@ -10,6 +10,7 @@ export class PaymentPage {
   pageName: string;
   deposit: boolean;
   withdraw: boolean;
+  title: string;
 
   constructor(public navCtrl: NavController,
               public modalCtrl: ModalController,
@@ -21,8 +22,8 @@ export class PaymentPage {
     console.log('ionViewDidLoad PaymentPage');
     console.log("PAGE : " + this.getActivePage())
 
-    this.pageName = this.getActivePage();
-    if(this.pageName.indexOf('deposit') != -1){
+    this.title = this.getActivePage();
+    if(this.title.indexOf('Deposit') != -1){
       this.deposit = true;
       this.withdraw = false;
     } else {
