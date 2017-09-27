@@ -7,14 +7,35 @@ import { IonicPage, NavController, ModalController, AlertController, NavParams }
 })
 export class PaymentPage {
   rootPage: any;
+  pageName: string;
+  deposit: boolean;
+  withdraw: boolean;
 
-  constructor(public navCtrl: NavController, public modalCtrl: ModalController, public alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController,
+              public modalCtrl: ModalController,
+              public alertCtrl: AlertController,
+              public params: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PaymentPage');
+    console.log("PAGE : " + this.getActivePage())
+
+    this.pageName = this.getActivePage();
+    if(this.pageName.indexOf('deposit') != -1){
+      this.deposit = true;
+      this.withdraw = false;
+    } else {
+      this.deposit = false;
+      this.withdraw = true;
+    }
   }
 
+  getActivePage(): string {
+    return this.params.get("page")
+  }
+
+  /*
   openPaymentModal() {
     let data = {value:100}
     this.openModal("PaymentModalPage", data);
@@ -24,4 +45,5 @@ export class PaymentPage {
     this.modalCtrl.create(pageName, value, { cssClass: 'inset-modal' })
                   .present();
   }
+  */
 }

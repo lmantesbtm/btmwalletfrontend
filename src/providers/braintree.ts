@@ -48,7 +48,7 @@ export class BTProvider{
     }
 
     return this.getPayload().then(payload => {
-      let price = (<HTMLInputElement>document.getElementById("amount")).value;
+      let price = (<HTMLLabelElement>document.getElementById("amount")).textContent;
       payload["amount"] = price;
       return this.http.post(this.apiURL, payload, headers).toPromise()
                 .then(this.extractData)

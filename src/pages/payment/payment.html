@@ -43,17 +43,20 @@
         <input type="text" name="" value="" placeholder="HRC">
       </ion-col>
     </ion-row>
+  </ion-grid>
+  <ion-grid>
     <ion-row>
       <ion-col col-10 offset-2 class="rounded-border">
         <ion-label>Total: MYR 100.00</ion-label>
       </ion-col>
+    </ion-row>
+
+    <!--
+
+    <ion-row text-center>
       <ion-col>
         <ion-label text-center>Payment Options :</ion-label>
       </ion-col>
-    </ion-row>
-  </ion-grid>
-  <ion-grid>
-    <ion-row text-center>
       <ion-col offset-2 class="col-img border-img">
         <img src="https://seeklogo.com/images/V/visa-logo-6F4057663D-seeklogo.com.png" alt="VISA" class="card-img" onclick="toggle()">
         <img src="https://seeklogo.com/images/M/mastercard-logo-473B8726A9-seeklogo.com.png" alt="MASTERCARD" class="card-img">
@@ -69,6 +72,8 @@
         <button type="button" name="button" ion-button class="btn-size" (click)="openPaymentModal()">Pay</button>
       </ion-col>
     </ion-row>
+  -->
+    <page-payment-deposit *ngIf="deposit"></page-payment-deposit>
+    <page-payment-withdrawal *ngIf="withdraw"></page-payment-withdrawal>
   </ion-grid>
-  <page-payment-withdrawal></page-payment-withdrawal>
 </ion-content>

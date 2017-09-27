@@ -13,8 +13,11 @@ import { TransactionHistoryPage } from '../transaction-history/transaction-histo
 export class TabsPage {
 
   tab1Root = PaymentPage;
-  tab2Root = HomePage;
+  tab2Root = PaymentPage;
   tab3Root = ContactPage;
+
+  tabDeposit = {page: "deposit"};
+  tabWithdraw = {page: "withdraw"}
 
   constructor() {
 

@@ -13,6 +13,8 @@ import { TransactionHistoryPage } from '../pages/transaction-history/transaction
 import { TabsPage } from '../pages/tabs/tabs';
 
 import { PaymentWithdrawalPage } from '../pages/payment/payment-withdrawal/payment-withdrawal';
+import { PaymentResponsePage } from '../pages/payment/payment-response/payment-response';
+import { PaymentDepositPage } from '../pages/payment/payment-deposit/payment-deposit';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -28,6 +30,8 @@ import { BTProvider } from '../providers/braintree';
     InvestmentLedgerPage,
     TransactionHistoryPage,
     PaymentWithdrawalPage,
+    PaymentResponsePage,
+    PaymentDepositPage,
     TabsPage
   ],
   imports: [
@@ -44,6 +48,8 @@ import { BTProvider } from '../providers/braintree';
     PaymentPage,
     InvestmentLedgerPage,
     TransactionHistoryPage,
+    PaymentResponsePage,
+    PaymentDepositPage,
     TabsPage
   ],
   providers: [

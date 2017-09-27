@@ -45,7 +45,6 @@ router.post('/checkouts', function (req, res, next) {
   }, function (err, result) {
     if (result.success || result.transaction) {
       //res.redirect('checkouts/' + result.transaction.id);
-      console.log(result)
       res.json(result);
 
     } else {
