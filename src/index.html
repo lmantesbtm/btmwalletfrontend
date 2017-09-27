@@ -21,8 +21,12 @@
         .then(() => console.log('service worker installed'))
         .catch(err => console.error('Error', err));
     }
+      <script src="https://js.braintreegateway.com/web/dropin/1.7.0/js/dropin.min.js"></script>
   </script>-->
-
+  <script type="text/javascript" src="/javascript/vendor/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="/javascript/vendor/jquery.lettering-0.6.1.min.js"></script>
+  <script type="text/javascript" src="/javascript/demo.js"></script>
+  <script src="https://js.braintreegateway.com/web/dropin/1.7.0/js/dropin.min.js"></script>
   <link href="build/main.css" rel="stylesheet">
 
 </head>
@@ -38,8 +42,11 @@
        It contains all of the dependencies in node_modules -->
   <script src="build/vendor.js"></script>
 
-  <!-- The main bundle js is generated during the build process -->
+  <!-- The main bundle js is generated during the build process <script src="assets/js/btdropin.js"></script> -->
   <script src="build/main.js"></script>
+
+  <script src="assets/js/custom.js"></script>
+
 
 </body>
 </html>

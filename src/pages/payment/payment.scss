@@ -1,0 +1,90 @@
+page-payment {
+  ion-modal,
+  .show-page {
+    // transparent black background overlay
+    background-color: rgba(0, 0, 0, .5) !important;
+    padding: 50px !important;
+  }
+  .toolbar-background {
+    color: red !important;
+  }
+  ion-modal.modal-wrapper {
+    transform: translateY(30%) !important;
+  }
+  ion-page.modal {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .modal-backdrop-bg {
+    background-color: #000;
+    opacity: 0;
+  }
+  .active .modal-backdrop-bg {
+    opacity: 0.5;
+  }
+}
+
+.circle {
+  height: 25vw;
+  width: 25vw;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 5px gray;
+  display: inline-block;
+  text-align: center;
+  line-height: 65px;
+  padding-left: 5px;
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coin-dropdown {
+  margin-top: 10px;
+}
+
+.rounded-border {
+  border: 2px solid #000;
+  border-radius: 35px;
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  max-width: 64%;
+  margin-top: 20px;
+}
+
+.border-img {
+  border: 2px solid #000;
+  border-radius: 28px;
+  max-width: 64%;
+  border-color: #dcdcdc;
+}
+
+input[type=text] {
+  border-radius: 5px;
+  width: 50%;
+  height: 40px;
+  text-align: center;
+  margin-left: 25%;
+}
+
+.card-img {
+  height: 50px;
+}
+
+.col-img {
+  height: 65px;
+}
+
+.btn-size {
+  width: 195px;
+  border-radius: 25px;
+}
+
+ion-modal.inset-modal {
+  // transparent black background overlay
+  background-color: rgba(0, 0, 0, .5) !important;
+  transition: opacity .25s ease-in-out;
+  padding: 20vh 10vw;
+}

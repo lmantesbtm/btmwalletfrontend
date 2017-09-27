@@ -1,17 +1,30 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>PAYMENT</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <div class="wrapper">
+    <div class="checkout container">
+      <div class="content">
+        <form id="payment-form">
+          <label for="amount"><span class="input-label">Amount</span>
+            <div class="input-wrapper amount-wrapper">
+              <input id="amount" name="amount" type="tel" min="1" placeholder="Amount" value="10"/>
+            </div>
+          </label>
+          <div class="toggle-payment">
+            <img src="https://seeklogo.com/images/V/visa-logo-6F4057663D-seeklogo.com.png" alt="VISA" id="card-img" onclick="toggle()">
+            <img src="https://seeklogo.com/images/M/mastercard-logo-473B8726A9-seeklogo.com.png" alt="MASTERCARD" id="card-img">
+          </div>
+          <div id="bt-container">
+            <div id="dropin-container"></div>
+            <button id="submit-button" class="pay-button">Pay</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/btdropin.js"></script>
 </ion-content>
