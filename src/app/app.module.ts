@@ -19,6 +19,8 @@ import { PaymentDepositPage } from '../pages/payment/payment-deposit/payment-dep
 import { NavbarComponent } from '../components/navbar/navbar';
 
 import { ChartsPage } from '../pages/charts/charts';
+import { ChartsModule } from 'ng2-charts';
+import { GraphsPage } from '../pages/charts/graphs/graphs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -37,13 +39,15 @@ import { BTProvider } from '../providers/braintree';
     PaymentResponsePage,
     PaymentDepositPage,
     ChartsPage,
+    GraphsPage,
     NavbarComponent,
     TabsPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    HttpModule
+    HttpModule,
+    ChartsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -57,6 +61,7 @@ import { BTProvider } from '../providers/braintree';
     PaymentResponsePage,
     PaymentDepositPage,
     ChartsPage,
+    GraphsPage,
     NavbarComponent,
     TabsPage
   ],
