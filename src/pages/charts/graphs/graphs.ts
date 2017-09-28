@@ -27,7 +27,7 @@ export class GraphsPage {
     scales: {
        xAxes: [
         {
-            display: true
+            display: false
         }
       ],
        yAxes: [
