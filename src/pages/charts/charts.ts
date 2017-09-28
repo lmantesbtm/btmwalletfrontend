@@ -31,7 +31,7 @@ export class ChartsPage {
   }
 
   loadScreen(count) {
-    this.img = 'assets/images/coin-0'+ count + '.png'
+    this.img = 'assets/images/coins-0'+ count + '.png'
     this.risk = this.riskDescription[count] + ' RISK INVESTMENT';
   }
 }
