@@ -16,6 +16,8 @@ import { PaymentWithdrawalPage } from '../pages/payment/payment-withdrawal/payme
 import { PaymentResponsePage } from '../pages/payment/payment-response/payment-response';
 import { PaymentDepositPage } from '../pages/payment/payment-deposit/payment-deposit';
 
+import { NavbarComponent } from '../components/navbar/navbar';
+
 import { ChartsPage } from '../pages/charts/charts';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -35,6 +37,7 @@ import { BTProvider } from '../providers/braintree';
     PaymentResponsePage,
     PaymentDepositPage,
     ChartsPage,
+    NavbarComponent,
     TabsPage
   ],
   imports: [
@@ -54,6 +57,7 @@ import { BTProvider } from '../providers/braintree';
     PaymentResponsePage,
     PaymentDepositPage,
     ChartsPage,
+    NavbarComponent,
     TabsPage
   ],
   providers: [
