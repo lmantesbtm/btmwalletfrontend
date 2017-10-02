@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 import { AboutPage } from '../about/about';
-import { ContactPage } from '../contact/contact';
+import { PreLoginPage } from '../pre-login/pre-login';
 import { ChartsPage } from '../charts/charts';
 import { PaymentPage } from '../payment/payment';
 import { InvestmentLedgerPage } from '../investment-ledger/investment-ledger';
@@ -12,9 +12,9 @@ import { TransactionHistoryPage } from '../transaction-history/transaction-histo
 })
 export class TabsPage {
 
-  tab1Root = ChartsPage;
+  tab1Root = PreLoginPage;
   tab2Root = PaymentPage;
-  tab3Root = ContactPage;
+  tab3Root = ChartsPage;
 
   tabDeposit = {page: "Deposit"};
   tabWithdraw = {page: "Withdraw"}

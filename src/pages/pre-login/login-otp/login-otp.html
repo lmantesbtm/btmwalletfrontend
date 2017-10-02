@@ -1,0 +1,15 @@
+<ion-content padding class="login-back-color">
+  <login-logo></login-logo>
+  <h4 id="" class="login-h4">{{header}}</h4>
+  <form id="page15-form14" class="list">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <input type="password" *ngIf="isPassword()" placeholder="Insert one time password" margin-text="left" class="register-input-box">
+          <input type="password" *ngIf="isPassword()==false" placeholder="Input passcode here" margin-text="left" class="register-input-box">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <button id="page15-button14" style="border-radius:20px 20px 20px 20px;" class="button button-positive button-block" ion-button (click)="setPassword()">{{btnContent}}</button>
+  </form>
+</ion-content>
