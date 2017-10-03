@@ -12,6 +12,12 @@ page-pre-login {
   width: 65px;
 }
 
+.blue-button {
+  font-weight:600;
+  color:#000000;
+  border-radius:100px 100px 100px 100px;
+}
+
 .round-bg-pin {
   border: 2px solid #bbbbbb;
   border-radius: 50%;
@@ -22,12 +28,6 @@ page-pre-login {
 .login-h4 {
   color:#000000;
   text-align:center;
-}
-
-.blue-button {
-  font-weight:600;
-  color:#000000;
-  border-radius:100px 100px 100px 100px;
 }
 
 .register-blue-button {
@@ -47,10 +47,7 @@ page-pre-login {
   color: #000;
 }
 
-.spacer {
-  width: 100%;
-  height: 27px;
-}
+
 
 .keypad {
   text-align: center;

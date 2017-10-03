@@ -16,17 +16,24 @@ import { LoginSetPasswordPage } from '../pages/pre-login/login-set-password/logi
 import { LoginPinPage } from '../pages/pre-login/login-pin/login-pin';
 import { RegisterPage } from '../pages/register/register';
 
+// Profile
+import { ProfilePage } from '../pages/profile/profile';
+
 // Payment
 import { PaymentPage } from '../pages/payment/payment';
 import { InvestmentLedgerPage } from '../pages/investment-ledger/investment-ledger';
+import { InvestmentWalletPage } from '../pages/investment-wallet/investment-wallet';
 import { TransactionHistoryPage } from '../pages/transaction-history/transaction-history';
 import { PaymentWithdrawalPage } from '../pages/payment/payment-withdrawal/payment-withdrawal';
 import { PaymentResponsePage } from '../pages/payment/payment-response/payment-response';
 import { PaymentDepositPage } from '../pages/payment/payment-deposit/payment-deposit';
+import { PaymentRecurringPage } from '../pages/payment/payment-recurring/payment-recurring';
 
+// Components
 import { TabsPage } from '../pages/tabs/tabs';
 import { NavbarComponent } from '../components/navbar/navbar';
 import { LoginLogoComponent } from '../components/login-logo/login-logo';
+import { TabsFooterComponent } from '../components/tabs-footer/tabs-footer';
 
 // Charts
 import { ChartsPage } from '../pages/charts/charts';
@@ -51,18 +58,24 @@ import { BTProvider } from '../providers/braintree';
     LoginSetPasswordPage,
     LoginPinPage,
 
+    ProfilePage,
+
     PaymentPage,
     InvestmentLedgerPage,
+    InvestmentWalletPage,
     TransactionHistoryPage,
     PaymentWithdrawalPage,
     PaymentResponsePage,
     PaymentDepositPage,
+    PaymentRecurringPage,
 
     ChartsPage,
     GraphsPage,
 
     LoginLogoComponent,
     NavbarComponent,
+    TabsFooterComponent,
+
     TabsPage
   ],
   imports: [
@@ -85,17 +98,23 @@ import { BTProvider } from '../providers/braintree';
     LoginSetPasswordPage,
     LoginPinPage,
 
+    ProfilePage,
+
     PaymentPage,
     InvestmentLedgerPage,
+    InvestmentWalletPage,
     TransactionHistoryPage,
     PaymentResponsePage,
     PaymentDepositPage,
+    PaymentRecurringPage,
 
     ChartsPage,
     GraphsPage,
 
     LoginLogoComponent,
     NavbarComponent,
+    TabsFooterComponent,
+
     TabsPage
   ],
   providers: [

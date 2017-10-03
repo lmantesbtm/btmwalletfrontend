@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NavController } from 'ionic-angular';
+import { PaymentPage } from '../../pages/payment/payment'
 
 @Component({
   selector: 'navbar',
@@ -8,9 +10,12 @@ export class NavbarComponent {
 
   text: string;
 
-  constructor() {
+  constructor(public navCtrl: NavController) {
     console.log('Hello NavbarComponent Component');
-    this.text = 'Hello World';
   }
 
+  paymentPage() {
+    let page = {page: "Deposit"}
+    this.navCtrl.push(PaymentPage, page);
+  }
 }
