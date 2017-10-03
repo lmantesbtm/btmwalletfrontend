@@ -22,6 +22,7 @@ import { ProfilePage } from '../pages/profile/profile';
 // Payment
 import { PaymentPage } from '../pages/payment/payment';
 import { InvestmentLedgerPage } from '../pages/investment-ledger/investment-ledger';
+import { InvestmentWalletPage } from '../pages/investment-wallet/investment-wallet';
 import { TransactionHistoryPage } from '../pages/transaction-history/transaction-history';
 import { PaymentWithdrawalPage } from '../pages/payment/payment-withdrawal/payment-withdrawal';
 import { PaymentResponsePage } from '../pages/payment/payment-response/payment-response';
@@ -60,6 +61,7 @@ import { BTProvider } from '../providers/braintree';
 
     PaymentPage,
     InvestmentLedgerPage,
+    InvestmentWalletPage,
     TransactionHistoryPage,
     PaymentWithdrawalPage,
     PaymentResponsePage,
@@ -97,6 +99,7 @@ import { BTProvider } from '../providers/braintree';
 
     PaymentPage,
     InvestmentLedgerPage,
+    InvestmentWalletPage,
     TransactionHistoryPage,
     PaymentResponsePage,
     PaymentDepositPage,
