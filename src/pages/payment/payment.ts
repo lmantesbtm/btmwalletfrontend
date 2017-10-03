@@ -6,7 +6,6 @@ import { IonicPage, NavController, ModalController, AlertController, NavParams }
   templateUrl: 'payment.html',
 })
 export class PaymentPage {
-  rootPage: any;
   pageName: string;
   deposit: boolean;
   withdraw: boolean;
@@ -35,16 +34,4 @@ export class PaymentPage {
   getActivePage(): string {
     return this.params.get("page")
   }
-
-  /*
-  openPaymentModal() {
-    let data = {value:100}
-    this.openModal("PaymentModalPage", data);
-  }
-
-  openModal(pageName, value) {
-    this.modalCtrl.create(pageName, value, { cssClass: 'inset-modal' })
-                  .present();
-  }
-  */
 }

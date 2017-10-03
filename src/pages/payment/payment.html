@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar hideBackButton>
     <ion-title>{{title}}</ion-title>
   </ion-navbar>
 </ion-header>
@@ -25,13 +25,13 @@
     </ion-row>
     <ion-row class="coin-dropdown">
       <ion-col col-4>
-        <input type="text" name="" value="" placeholder="LRC">
+        <input type="text" name="" value="" placeholder="LRC" class="risk-value">
       </ion-col>
       <ion-col col-4>
-        <input type="text" name="" value="" placeholder="MRC">
+        <input type="text" name="" value="" placeholder="MRC" class="risk-value">
       </ion-col>
       <ion-col col-4>
-        <input type="text" name="" value="" placeholder="HRC">
+        <input type="text" name="" value="" placeholder="HRC" class="risk-value">
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -45,3 +45,5 @@
     <page-payment-withdrawal *ngIf="withdraw"></page-payment-withdrawal>
   </ion-grid>
 </ion-content>
+
+<tabs-footer></tabs-footer>

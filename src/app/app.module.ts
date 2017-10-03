@@ -33,6 +33,7 @@ import { PaymentRecurringPage } from '../pages/payment/payment-recurring/payment
 import { TabsPage } from '../pages/tabs/tabs';
 import { NavbarComponent } from '../components/navbar/navbar';
 import { LoginLogoComponent } from '../components/login-logo/login-logo';
+import { TabsFooterComponent } from '../components/tabs-footer/tabs-footer';
 
 // Charts
 import { ChartsPage } from '../pages/charts/charts';
@@ -73,6 +74,8 @@ import { BTProvider } from '../providers/braintree';
 
     LoginLogoComponent,
     NavbarComponent,
+    TabsFooterComponent,
+
     TabsPage
   ],
   imports: [
@@ -110,6 +113,8 @@ import { BTProvider } from '../providers/braintree';
 
     LoginLogoComponent,
     NavbarComponent,
+    TabsFooterComponent,
+
     TabsPage
   ],
   providers: [
