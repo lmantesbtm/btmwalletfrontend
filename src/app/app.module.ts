@@ -16,6 +16,9 @@ import { LoginSetPasswordPage } from '../pages/pre-login/login-set-password/logi
 import { LoginPinPage } from '../pages/pre-login/login-pin/login-pin';
 import { RegisterPage } from '../pages/register/register';
 
+// Profile
+import { ProfilePage } from '../pages/profile/profile';
+
 // Payment
 import { PaymentPage } from '../pages/payment/payment';
 import { InvestmentLedgerPage } from '../pages/investment-ledger/investment-ledger';
@@ -25,6 +28,7 @@ import { PaymentResponsePage } from '../pages/payment/payment-response/payment-r
 import { PaymentDepositPage } from '../pages/payment/payment-deposit/payment-deposit';
 import { PaymentRecurringPage } from '../pages/payment/payment-recurring/payment-recurring';
 
+// Components
 import { TabsPage } from '../pages/tabs/tabs';
 import { NavbarComponent } from '../components/navbar/navbar';
 import { LoginLogoComponent } from '../components/login-logo/login-logo';
@@ -51,6 +55,8 @@ import { BTProvider } from '../providers/braintree';
     LoginOtpPage,
     LoginSetPasswordPage,
     LoginPinPage,
+
+    ProfilePage,
 
     PaymentPage,
     InvestmentLedgerPage,
@@ -86,6 +92,8 @@ import { BTProvider } from '../providers/braintree';
     LoginOtpPage,
     LoginSetPasswordPage,
     LoginPinPage,
+
+    ProfilePage,
 
     PaymentPage,
     InvestmentLedgerPage,
