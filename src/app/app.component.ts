@@ -5,7 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { PreLoginPage } from '../pages/pre-login/pre-login'
-import { PaymentRecurringPage } from '../pages/payment/payment-recurring/payment-recurring';
+import { ProfilePage } from '../pages/profile/profile';
 
 @Component({
   templateUrl: 'app.html'
@@ -13,7 +13,7 @@ import { PaymentRecurringPage } from '../pages/payment/payment-recurring/payment
 
 export class MyApp {
   //rootPage:any = TabsPage;
-  rootPage: any = PaymentRecurringPage;
+  rootPage: any = ProfilePage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
