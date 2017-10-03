@@ -23,6 +23,7 @@ import { TransactionHistoryPage } from '../pages/transaction-history/transaction
 import { PaymentWithdrawalPage } from '../pages/payment/payment-withdrawal/payment-withdrawal';
 import { PaymentResponsePage } from '../pages/payment/payment-response/payment-response';
 import { PaymentDepositPage } from '../pages/payment/payment-deposit/payment-deposit';
+import { PaymentRecurringPage } from '../pages/payment/payment-recurring/payment-recurring';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { NavbarComponent } from '../components/navbar/navbar';
@@ -57,6 +58,7 @@ import { BTProvider } from '../providers/braintree';
     PaymentWithdrawalPage,
     PaymentResponsePage,
     PaymentDepositPage,
+    PaymentRecurringPage,
 
     ChartsPage,
     GraphsPage,
@@ -90,6 +92,7 @@ import { BTProvider } from '../providers/braintree';
     TransactionHistoryPage,
     PaymentResponsePage,
     PaymentDepositPage,
+    PaymentRecurringPage,
 
     ChartsPage,
     GraphsPage,

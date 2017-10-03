@@ -5,14 +5,16 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { PreLoginPage } from '../pages/pre-login/pre-login'
+import { PaymentRecurringPage } from '../pages/payment/payment-recurring/payment-recurring';
 
 @Component({
   templateUrl: 'app.html'
 })
+
 export class MyApp {
   //rootPage:any = TabsPage;
-  rootPage: any = PreLoginPage;
-  
+  rootPage: any = PaymentRecurringPage;
+
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
