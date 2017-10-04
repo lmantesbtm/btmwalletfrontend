@@ -32,6 +32,7 @@ import { PaymentRecurringPage } from '../pages/payment/payment-recurring/payment
 // Components
 import { TabsPage } from '../pages/tabs/tabs';
 import { NavbarComponent } from '../components/navbar/navbar';
+import { SidemenuComponent } from '../components/sidemenu/sidemenu';
 import { LoginLogoComponent } from '../components/login-logo/login-logo';
 import { TabsFooterComponent } from '../components/tabs-footer/tabs-footer';
 
@@ -43,6 +44,7 @@ import { GraphsPage } from '../pages/charts/graphs/graphs';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { BTProvider } from '../providers/braintree';
+import { VisaProvider } from '../providers/visa/visa';
 
 @NgModule({
   declarations: [
@@ -74,6 +76,7 @@ import { BTProvider } from '../providers/braintree';
 
     LoginLogoComponent,
     NavbarComponent,
+    SidemenuComponent,
     TabsFooterComponent,
 
     TabsPage
@@ -113,6 +116,7 @@ import { BTProvider } from '../providers/braintree';
 
     LoginLogoComponent,
     NavbarComponent,
+    SidemenuComponent,
     TabsFooterComponent,
 
     TabsPage
@@ -121,7 +125,8 @@ import { BTProvider } from '../providers/braintree';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    BTProvider
+    BTProvider,
+    VisaProvider
   ]
 })
 export class AppModule {}

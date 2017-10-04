@@ -1,1 +1,33 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<!-- Side Menu
+  Issue regarding IOS when sidemenu function is separated
+  to another component/page
+  https://forum.ionicframework.com/t/solved-child-page-specific-menu/76412/6
+-->
+<ion-menu side="left" [content]="sidemenu" persistent="true">
+  <ion-content>
+    <ion-list>
+      <ion-item (click)="wallet()" menuClose>
+          Investment Wallet
+      </ion-item>
+      <ion-item (click)="rewards()" menuClose>
+          Rewards
+      </ion-item>
+      <ion-item (click)="ledger()" menuClose>
+          Investment Ledger
+      </ion-item>
+      <ion-item (click)="buy()" menuClose>
+          Buy
+      </ion-item>
+      <ion-item (click)="withdraw()" menuClose>
+          Withdraw
+      </ion-item>
+      <ion-item (click)="history()" menuClose>
+          Transaction History
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+
+<!-- Application Root Page -->
+<ion-nav [root]="rootPage" #sidemenu></ion-nav>
