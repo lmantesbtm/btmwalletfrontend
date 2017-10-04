@@ -2,6 +2,10 @@ page-charts {
 
 }
 
+.icon {
+  align-items: center !important;
+}
+
 .mascot {
   width: 60%;
 }
@@ -30,4 +34,10 @@ page-charts {
 .risk-border {
   border-bottom: 1px solid #aaa;
   box-shadow: 0 5px 20px 3px #888888;
+}
+
+.no-scroll {
+  .scroll-content {
+    overflow: hidden !important;
+  }
 }
