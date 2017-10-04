@@ -1,10 +1,10 @@
-
 <ion-content class="no-scroll">
-  <img src="assets/images/buy.png" style="width: 80px !important; height: 80px !important;" alt="" class="icon" offset-2 (click)="PaymentPage()">
+  <navbar></navbar>
+  <div class="mascot-spacer"></div>
   <ion-grid>
     <ion-row>
-      <ion-col>
-        <img [src]="img" alt="" class="mascot" offset-2 (click)="changeMascot()">
+      <ion-col text-center>
+        <img [src]="img" alt="" class="mascot" (click)="changeMascot()">
       </ion-col>
     </ion-row>
     <ion-row text-center>
@@ -47,8 +47,5 @@
     </ion-row>
     <div class="risk-border"></div>
     <page-graphs></page-graphs>
-
-
   </ion-grid>
-
 </ion-content>
