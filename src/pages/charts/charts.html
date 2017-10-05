@@ -4,7 +4,9 @@
   <ion-grid>
     <ion-row>
       <ion-col text-center>
-        <img [src]="img" alt="" class="mascot" (click)="changeMascot()">
+        <img src="assets/images/left.png" class="left-arrow" alt="" (click)="changeMascot('left')">
+        <img [src]="img" alt="" class="mascot" >
+        <img src="assets/images/right.png" class="right-arrow" alt="" (click)="changeMascot('right')">
       </ion-col>
     </ion-row>
     <ion-row text-center>
