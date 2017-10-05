@@ -33,6 +33,10 @@ export class MyApp {
     });
   }
 
+  profile(){
+    this.navCtrl.push(ProfilePage)
+  }
+  
   wallet(){
     this.navCtrl.push(InvestmentWalletPage)
   }
@@ -50,5 +54,14 @@ export class MyApp {
   }
   history(){
     this.navCtrl.push(TransactionHistoryPage)
+  }
+  support(){
+    this.navCtrl.push(TransactionHistoryPage)
+  }
+  faq(){
+    this.navCtrl.push(TransactionHistoryPage)
+  }
+  logout(){
+    this.nav.setRoot(PreLoginPage)
   }
 }

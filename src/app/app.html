@@ -3,28 +3,103 @@
   to another component/page
   https://forum.ionicframework.com/t/solved-child-page-specific-menu/76412/6
 -->
-<ion-menu side="left" [content]="sidemenu" persistent="true">
-  <ion-content>
-    <ion-list>
-      <ion-item (click)="wallet()" menuClose>
-          Investment Wallet
-      </ion-item>
-      <ion-item (click)="rewards()" menuClose>
-          Rewards
-      </ion-item>
-      <ion-item (click)="ledger()" menuClose>
-          Investment Ledger
-      </ion-item>
-      <ion-item (click)="buy()" menuClose>
-          Buy
-      </ion-item>
-      <ion-item (click)="withdraw()" menuClose>
-          Withdraw
-      </ion-item>
-      <ion-item (click)="history()" menuClose>
-          Transaction History
-      </ion-item>
-    </ion-list>
+<ion-menu side="left" [content]="sidemenu" persistent="true" >
+  <ion-content class="menu-bg">
+    <ion-grid style="color:white">
+      <ion-row>
+        <ion-col col-3>
+          <img src="assets/images/white_icon/icon-white-11.png" alt="" class="menu-setting-btn">
+        </ion-col>
+        <ion-col col-auto>
+        </ion-col>
+        <ion-col col-3>
+        </ion-col>
+      </ion-row>
+      <div class="menu-margin-left">
+        <ion-row (click)="profile()" menuClose>
+          <ion-col col-auto>
+            <img src="assets/images/profile.png" alt="" class="profile-img">
+          </ion-col>
+          <ion-col class="menu-margin-top" text-left>
+            <div class=""><strong>USERNAME</strong></div>
+            <div class="">abc@abc.com</div>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div class="blue-line"></div>
+      <div class="menu-margin-left">
+        <ion-row (click)="wallet()" menuClose>
+          <ion-col col-2>
+            <img src="assets/images/white_icon/icon-white-02.png" alt="" >
+          </ion-col>
+          <ion-col col-10 class="menu-margin-top">
+            Investment Wallet
+          </ion-col>
+        </ion-row>
+        <ion-row (click)="ledger()" menuClose>
+          <ion-col col-2>
+            <img src="assets/images/white_icon/icon-white-05.png" alt="" >
+          </ion-col>
+          <ion-col col-10 class="menu-margin-top">
+            Investment Ledger
+          </ion-col>
+        </ion-row>
+        <ion-row (click)="buy()" menuClose>
+          <ion-col col-2>
+            <img src="assets/images/white_icon/icon-white-01.png" alt="" >
+          </ion-col>
+          <ion-col col-10 class="menu-margin-top">
+            Buy
+          </ion-col>
+        </ion-row>
+        <ion-row (click)="withdraw()" menuClose>
+          <ion-col col-2>
+            <img src="assets/images/white_icon/icon-white-08.png" alt="" >
+          </ion-col>
+          <ion-col col-10 class="menu-margin-top">
+            Withdraw
+          </ion-col>
+        </ion-row>
+        <ion-row (click)="history()" menuClose>
+          <ion-col col-2>
+            <img src="assets/images/white_icon/icon-white-09.png" alt="" >
+          </ion-col>
+          <ion-col col-10 class="menu-margin-top">
+            Transaction History
+          </ion-col>
+        </ion-row>
+      </div>
+      <div class="blue-line"></div>
+      <div class="menu-margin-left">
+        <ion-row (click)="support()" menuClose>
+          <ion-col col-2>
+            <img src="assets/images/white_icon/icon-white-06.png" alt="" >
+          </ion-col>
+          <ion-col col-10 class="menu-margin-top">
+            Support
+          </ion-col>
+        </ion-row>
+        <ion-row (click)="faq()" menuClose>
+          <ion-col col-2>
+            <img src="assets/images/white_icon/icon-white-10.png" alt="" >
+          </ion-col>
+          <ion-col col-10 class="menu-margin-top">
+            FAQ
+          </ion-col>
+        </ion-row>
+      </div>
+      <div class="blue-line"></div>
+      <div class="menu-margin-left">
+        <ion-row (click)="logout()" menuClose>
+          <ion-col col-2>
+            <img src="assets/images/white_icon/icon-white-07.png" alt="" >
+          </ion-col>
+          <ion-col col-10 class="menu-margin-top">
+            Logout
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-grid>
   </ion-content>
 </ion-menu>
 
