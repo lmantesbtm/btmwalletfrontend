@@ -49,7 +49,12 @@ export class GraphsPage {
       pointBackgroundColor: 'rgba(0,0,0,0)',
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(148,159,177,0.8)'
+      pointHoverBorderColor: 'rgba(148,159,177,0.8)',
+      spanGaps: false,
+      pointHoverRadius: 5,
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
     },
 
   ];

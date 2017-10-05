@@ -1,3 +1,25 @@
-page-contact {
 
+
+.my-width{
+		width:50px;
+    position:center;
+	}
+
+  .my-width2{
+  		width:40px;
+  	}
+
+.my-width3{
+    		width:350px;
+        height:30px;
+        align-items: center !important;
+
+    	}
+
+.chartposition {
+  padding: $content-padding;
+  position:fixed;
+  bottom:0 ;
+  left: 0;
+  right: 0;
 }
