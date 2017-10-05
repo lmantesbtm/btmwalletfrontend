@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {ContactPage} from '../contact/contact';
+import { ContactPage } from '../contact/contact';
 
 @IonicPage()
 @Component({
@@ -45,6 +45,4 @@ export class ChartsPage {
     this.value = this.valueDescription[count]
 
   }
-
-  PaymentPage() {this.navCtrl.push(ContactPage)}
 }

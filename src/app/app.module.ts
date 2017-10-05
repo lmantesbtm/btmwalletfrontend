@@ -32,7 +32,6 @@ import { PaymentRecurringPage } from '../pages/payment/payment-recurring/payment
 // Components
 import { TabsPage } from '../pages/tabs/tabs';
 import { NavbarComponent } from '../components/navbar/navbar';
-import { SidemenuComponent } from '../components/sidemenu/sidemenu';
 import { LoginLogoComponent } from '../components/login-logo/login-logo';
 import { TabsFooterComponent } from '../components/tabs-footer/tabs-footer';
 
@@ -81,11 +80,10 @@ import { VisaProvider } from '../providers/visa/visa';
 
     LoginLogoComponent,
     NavbarComponent,
-    SidemenuComponent,
     TabsFooterComponent,
 
     DoubleclickDirective,
-    
+
     TabsPage
   ],
   imports: [
@@ -123,7 +121,6 @@ import { VisaProvider } from '../providers/visa/visa';
 
     LoginLogoComponent,
     NavbarComponent,
-    SidemenuComponent,
     TabsFooterComponent,
 
     TabsPage
