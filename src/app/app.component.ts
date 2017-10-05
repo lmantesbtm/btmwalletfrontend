@@ -19,6 +19,8 @@ import { ProfilePage } from '../pages/profile/profile';
 
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
+  @ViewChild('sidemenu') navCtrl: NavController;
+
   //rootPage:any = TabsPage;
   rootPage: any = ChartsPage;
 
@@ -32,21 +34,21 @@ export class MyApp {
   }
 
   wallet(){
-    this.nav.setRoot(InvestmentWalletPage)
+    this.navCtrl.push(InvestmentWalletPage)
   }
   rewards(){
-    this.nav.setRoot(ChartsPage)
+    this.navCtrl.push(ChartsPage)
   }
   ledger(){
-    this.nav.setRoot(InvestmentLedgerPage)
+    this.navCtrl.push(InvestmentLedgerPage)
   }
   buy(){
-    this.nav.setRoot(PaymentPage, {page:"Deposit"})
+    this.navCtrl.push(PaymentPage, {page:"Deposit"})
   }
   withdraw(){
-    this.nav.setRoot(PaymentPage, {page:"Withdraw"})
+    this.navCtrl.push(PaymentPage, {page:"Withdraw"})
   }
   history(){
-    this.nav.setRoot(TransactionHistoryPage)
+    this.navCtrl.push(TransactionHistoryPage)
   }
 }
