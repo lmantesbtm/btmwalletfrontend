@@ -10,7 +10,7 @@ import { ContactPage } from '../../contact/contact';
 })
 export class GraphsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, ) {
   }
 
   ionViewDidLoad() {
@@ -71,12 +71,11 @@ export class GraphsPage {
   // events
   public chartClicked(e:any):void {
     console.log(e);
-    this.navCtrl.push(ContactPage)
+    //this.navCtrl.push(ContactPage)
   }
 
   public chartHovered(e:any):void {
     console.log(e);
   }
-
 
 }
