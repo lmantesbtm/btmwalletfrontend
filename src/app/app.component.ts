@@ -36,7 +36,6 @@ export class MyApp {
   profile(){
     this.navCtrl.push(ProfilePage)
   }
-  
   wallet(){
     this.navCtrl.push(InvestmentWalletPage)
   }
