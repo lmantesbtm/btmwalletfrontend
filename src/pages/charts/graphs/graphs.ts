@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ChartsModule } from 'ng2-charts/ng2-charts';
+import { ContactPage } from '../../contact/contact';
 
 @IonicPage()
 @Component({
@@ -9,7 +10,7 @@ import { ChartsModule } from 'ng2-charts/ng2-charts';
 })
 export class GraphsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, ) {
   }
 
   ionViewDidLoad() {
@@ -17,7 +18,7 @@ export class GraphsPage {
   }
 
   public lineChartData:Array<any> = [
-  {data: [65, 59, 80, 81, 56, 55, 90, 1000], label: ''},
+  {data: [65, 59, 80, 81, 56, 55, 90, 100], label: ''},
   ];
 
   public lineChartLabels:Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August'];
@@ -43,12 +44,17 @@ export class GraphsPage {
 
   public lineChartColors:Array<any> = [
     { // grey
-      backgroundColor: 'rgba(151,187,205,1)',
-      borderColor: 'rgba(148,159,177,1)',
-      pointBackgroundColor: 'rgba(148,159,177,1)',
+      backgroundColor:'#00FFFF',
+      borderColor: 'rgba(0,0,0,0)',
+      pointBackgroundColor: 'rgba(0,0,0,0)',
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(148,159,177,0.8)'
+      pointHoverBorderColor: 'rgba(148,159,177,0.8)',
+      spanGaps: false,
+      pointHoverRadius: 5,
+      pointHoverBorderWidth: 2,
+      pointRadius: 1,
+      pointHitRadius: 10,
     },
 
   ];
@@ -70,11 +76,11 @@ export class GraphsPage {
   // events
   public chartClicked(e:any):void {
     console.log(e);
+    //this.navCtrl.push(ContactPage)
   }
 
   public chartHovered(e:any):void {
     console.log(e);
   }
-
 
 }

@@ -40,9 +40,15 @@ import { ChartsPage } from '../pages/charts/charts';
 import { ChartsModule } from 'ng2-charts';
 import { GraphsPage } from '../pages/charts/graphs/graphs';
 
+// Double Click
+import { DoubleclickDirective } from '../directives/doubleclick/doubleclick';
+
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
 import { BTProvider } from '../providers/braintree';
+import { VisaProvider } from '../providers/visa/visa';
 
 @NgModule({
   declarations: [
@@ -75,6 +81,8 @@ import { BTProvider } from '../providers/braintree';
     LoginLogoComponent,
     NavbarComponent,
     TabsFooterComponent,
+
+    DoubleclickDirective,
 
     TabsPage
   ],
@@ -121,7 +129,8 @@ import { BTProvider } from '../providers/braintree';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    BTProvider
+    BTProvider,
+    VisaProvider
   ]
 })
 export class AppModule {}

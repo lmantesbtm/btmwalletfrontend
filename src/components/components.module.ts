@@ -6,10 +6,12 @@ import { TabsFooterComponent } from './tabs-footer/tabs-footer';
 @NgModule({
 	declarations: [NavbarComponent,
     LoginLogoComponent,
-    TabsFooterComponent],
+    TabsFooterComponent,
+    ],
 	imports: [],
 	exports: [NavbarComponent,
     LoginLogoComponent,
-    TabsFooterComponent]
+    TabsFooterComponent,
+    ]
 })
 export class ComponentsModule {}

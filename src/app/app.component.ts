@@ -1,11 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Platform } from 'ionic-angular';
+import { NavController, Nav } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { TabsPage } from '../pages/tabs/tabs';
 import { PreLoginPage } from '../pages/pre-login/pre-login'
 import { InvestmentWalletPage } from '../pages/investment-wallet/investment-wallet';
+import { InvestmentLedgerPage } from '../pages/investment-ledger/investment-ledger';
+import { TransactionHistoryPage } from '../pages/transaction-history/transaction-history';
+import { PaymentPage } from '../pages/payment/payment';
 import { ChartsPage } from '../pages/charts/charts';
 import { ProfilePage } from '../pages/profile/profile';
 
@@ -14,8 +18,11 @@ import { ProfilePage } from '../pages/profile/profile';
 })
 
 export class MyApp {
+  @ViewChild(Nav) nav: Nav;
+  @ViewChild('sidemenu') navCtrl: NavController;
+
   //rootPage:any = TabsPage;
-  rootPage: any = PreLoginPage;
+  rootPage: any = ChartsPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
@@ -24,5 +31,36 @@ export class MyApp {
       statusBar.styleDefault();
       splashScreen.hide();
     });
+  }
+
+  profile(){
+    this.navCtrl.push(ProfilePage)
+  }
+  wallet(){
+    this.navCtrl.push(InvestmentWalletPage)
+  }
+  rewards(){
+    this.navCtrl.push(ChartsPage)
+  }
+  ledger(){
+    this.navCtrl.push(InvestmentLedgerPage)
+  }
+  buy(){
+    this.navCtrl.push(PaymentPage, {page:"Deposit"})
+  }
+  withdraw(){
+    this.navCtrl.push(PaymentPage, {page:"Withdraw"})
+  }
+  history(){
+    this.navCtrl.push(TransactionHistoryPage)
+  }
+  support(){
+    this.navCtrl.push(TransactionHistoryPage)
+  }
+  faq(){
+    this.navCtrl.push(TransactionHistoryPage)
+  }
+  logout(){
+    this.nav.setRoot(PreLoginPage)
   }
 }

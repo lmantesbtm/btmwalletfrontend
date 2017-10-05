@@ -2,8 +2,24 @@ page-charts {
 
 }
 
+.icon {
+  align-items: center !important;
+}
+
 .mascot {
   width: 60%;
+  vertical-align: middle;
+  margin-top: -2.75em;
+}
+
+.left-arrow {
+  width: 10%;
+  margin-right: 20px;
+}
+
+.right-arrow {
+  width: 10%;
+  margin-left: 20px;
 }
 
 .header-color {
