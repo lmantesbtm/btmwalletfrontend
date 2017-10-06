@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Settings</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>
+      <label>NOTIFICATION (Mobile & Email)</label>
+      <ion-icon name="phone-portrait" item-end></ion-icon>
+      <ion-icon name="mail" item-end></ion-icon>
+    </ion-list-header>
+    <ion-item-group>
+      <ion-item>
+        <ion-label>Outgoing Transfer</ion-label>
+        <ion-checkbox secondary checked="false" item-right></ion-checkbox>
+        <ion-checkbox secondary checked="false" item-right></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Incoming Transfer</ion-label>
+        <ion-checkbox item-right secondary checked="false"></ion-checkbox>
+        <ion-checkbox item-right secondary checked="false"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Payment Successful</ion-label>
+        <ion-checkbox item-right secondary checked="false"></ion-checkbox>
+        <ion-checkbox item-right secondary checked="false"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Payment Failed</ion-label>
+        <ion-checkbox item-right secondary checked="false"></ion-checkbox>
+        <ion-checkbox item-right secondary checked="false"></ion-checkbox>
+      </ion-item>
+      <ion-item>
+        <ion-label>Price Alert</ion-label>
+        <ion-checkbox item-right secondary checked="false"></ion-checkbox>
+        <ion-checkbox item-right secondary checked="false"></ion-checkbox>
+      </ion-item>
+    </ion-item-group>
+    <ion-list-header>
+      <label>DEPOSIT DATE</label>
+    </ion-list-header>
+    <button ion-item (click)="paymentDeposit()">
+      <ion-label>Change Deposit Date</ion-label>
+    </button>
+    <ion-list-header>
+      <label>SECURITY</label>
+    </ion-list-header>
+    <ion-item-group>
+      <button ion-item (click)="changePin()">
+        <ion-label>Change PIN</ion-label>
+      </button>
+      <button ion-item (click)="changePassword()">
+        <ion-label>Change Password</ion-label>
+      </button>
+      <button ion-item (click)="changeQuestion()">
+        <ion-label>Change Security Questions</ion-label>
+      </button>
+    </ion-item-group>
+    <ion-list-header>
+      <label>APP</label>
+    </ion-list-header>
+    <ion-item-group>
+      <button ion-item>
+        <ion-label>About Us<br>Version 1.0</ion-label>
+      </button>
+      <button ion-item>
+        <ion-label>Terms Of Service</ion-label>
+      </button>
+      <button ion-item>
+        <ion-label>Privacy Policy</ion-label>
+      </button>
+      <button ion-item>
+        <ion-label>Terms & Condition</ion-label>
+      </button>
+    </ion-item-group>
+  </ion-list>
+</ion-content>
