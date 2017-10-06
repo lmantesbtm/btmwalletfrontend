@@ -19,6 +19,9 @@ import { RegisterPage } from '../pages/register/register';
 // Profile
 import { ProfilePage } from '../pages/profile/profile';
 
+// Settings
+import { SettingsPage } from '../pages/settings/settings';
+
 // Payment
 import { PaymentPage } from '../pages/payment/payment';
 import { InvestmentLedgerPage } from '../pages/investment-ledger/investment-ledger';
@@ -66,6 +69,8 @@ import { VisaProvider } from '../providers/visa/visa';
 
     ProfilePage,
 
+    SettingsPage,
+
     PaymentPage,
     InvestmentLedgerPage,
     InvestmentWalletPage,
@@ -107,6 +112,7 @@ import { VisaProvider } from '../providers/visa/visa';
     LoginPinPage,
 
     ProfilePage,
+    SettingsPage,
 
     PaymentPage,
     InvestmentLedgerPage,

@@ -12,6 +12,7 @@ import { TransactionHistoryPage } from '../pages/transaction-history/transaction
 import { PaymentPage } from '../pages/payment/payment';
 import { ChartsPage } from '../pages/charts/charts';
 import { ProfilePage } from '../pages/profile/profile';
+import { SettingsPage } from '../pages/settings/settings';
 
 @Component({
   templateUrl: 'app.html'
@@ -33,6 +34,9 @@ export class MyApp {
     });
   }
 
+  settings(){
+    this.navCtrl.push(SettingsPage)
+  }
   profile(){
     this.navCtrl.push(ProfilePage)
   }
