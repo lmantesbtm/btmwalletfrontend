@@ -13,6 +13,9 @@ import { PaymentPage } from '../pages/payment/payment';
 import { ChartsPage } from '../pages/charts/charts';
 import { ProfilePage } from '../pages/profile/profile';
 import { SettingsPage } from '../pages/settings/settings';
+import { ContactPage } from '../pages/contact/contact';
+import { LoginPinPage } from '../pages/pre-login/login-pin/login-pin';
+import { RegisterPage } from '../pages/register/register';
 
 @Component({
   templateUrl: 'app.html'
@@ -23,7 +26,7 @@ export class MyApp {
   @ViewChild('sidemenu') navCtrl: NavController;
 
   //rootPage:any = TabsPage;
-  rootPage: any = ChartsPage;
+  rootPage: any = LoginPinPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
