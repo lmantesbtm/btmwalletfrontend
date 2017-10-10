@@ -32,6 +32,7 @@ export class PaymentPage {
   }
 
   getActivePage(): string {
-    return this.params.get("page")
+    //return this.params.get("page")
+    return "Deposit"
   }
 }

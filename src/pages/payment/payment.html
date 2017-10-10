@@ -8,19 +8,13 @@
   <ion-grid>
     <ion-row>
       <ion-col col-4>
-        <div class="circle">
-          <ion-label>LRC</ion-label>
-        </div>
+        <img src="assets/images/coins-01.png" alt="">
       </ion-col>
       <ion-col col-4>
-        <div class="circle">
-          <ion-label>MRC</ion-label>
-        </div>
+        <img src="assets/images/coins-02.png" alt="">
       </ion-col>
       <ion-col col-4>
-        <div class="circle">
-          <ion-label>HRC</ion-label>
-        </div>
+        <img src="assets/images/coins-03.png" alt="">
       </ion-col>
     </ion-row>
     <ion-row class="coin-dropdown">
@@ -37,8 +31,10 @@
   </ion-grid>
   <ion-grid>
     <ion-row>
-      <ion-col col-10 offset-2 class="rounded-border">
-        <ion-label>Total: MYR 100.00</ion-label>
+      <ion-col text-center>
+        <div class="rounded-border">
+          <ion-label>Total: MYR 100.00</ion-label>
+        </div>
       </ion-col>
     </ion-row>
     <page-payment-deposit *ngIf="deposit"></page-payment-deposit>
