@@ -30,6 +30,7 @@
         "chart.js": "^2.7.0",
         "com.paypal.cordova.mobilesdk": "^3.5.0",
         "cordova": "^7.0.1",
+        "cordova-android": "^6.2.3",
         "cordova-browser": "^4.1.0",
         "cordova-plugin-console": "^1.0.5",
         "cordova-plugin-device": "^1.1.4",
@@ -60,6 +61,7 @@
             "ionic-plugin-keyboard": {}
         },
         "platforms": [
+            "android",
             "browser"
         ]
     }

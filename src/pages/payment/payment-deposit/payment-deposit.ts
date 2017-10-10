@@ -36,7 +36,7 @@ export class PaymentDepositPage {
 				}, () => {
 					console.error('Error or render dialog closed without being successful');
 				});
-			}, () => {
+			}, (error) => {
 				console.error('Error in configuration');
 			});
 		}, (error) => {
