@@ -10,6 +10,7 @@ import { InvestmentWalletPage } from '../pages/investment-wallet/investment-wall
 import { InvestmentLedgerPage } from '../pages/investment-ledger/investment-ledger';
 import { TransactionHistoryPage } from '../pages/transaction-history/transaction-history';
 import { PaymentPage } from '../pages/payment/payment';
+import { PaymentModalPage } from '../pages/payment/payment-modal/payment-modal';
 import { ChartsPage } from '../pages/charts/charts';
 import { ProfilePage } from '../pages/profile/profile';
 import { SettingsPage } from '../pages/settings/settings';
@@ -26,7 +27,7 @@ export class MyApp {
   @ViewChild('sidemenu') navCtrl: NavController;
 
   //rootPage:any = TabsPage;
-  rootPage: any = LoginPinPage;
+  rootPage: any = ContactPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

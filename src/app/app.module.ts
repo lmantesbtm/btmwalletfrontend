@@ -52,6 +52,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { BTProvider } from '../providers/braintree';
 import { VisaProvider } from '../providers/visa/visa';
+import { PayPal } from '@ionic-native/paypal';
 
 @NgModule({
   declarations: [
@@ -136,7 +137,8 @@ import { VisaProvider } from '../providers/visa/visa';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     BTProvider,
-    VisaProvider
+    VisaProvider,
+    PayPal
   ]
 })
 export class AppModule {}
