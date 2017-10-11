@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
 import { LoginPage } from './login/login';
 
@@ -11,11 +11,14 @@ import { LoginPage } from './login/login';
 
 export class PreLoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public menuCtrl: MenuController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PreLoginPage');
+    this.menuCtrl.enable(false, 'sideMenu');
   }
 
   register() {

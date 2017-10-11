@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LoginOtpPage} from '../login-otp/login-otp';
+import { ChartsPage } from '../../charts/charts';
 
 @IonicPage()
 @Component({
@@ -20,5 +21,9 @@ export class LoginPinPage {
 
   forgotPin() {
     this.navCtrl.push(LoginOtpPage, this.pinPage)
+  }
+
+  mainScreen() {
+    this.navCtrl.setRoot(ChartsPage);
   }
 }
