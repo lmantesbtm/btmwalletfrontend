@@ -77,14 +77,95 @@ export class ContactPage {
   constructor(public navCtrl: NavController) {
 
   }
+  values = {
+    LHR: {
+      valueA: 52,
+      price: 20
+    },
+    MHR: {
+      valueA: 40,
+      price: 30
+    },
+    HHR: {
+      valueA: 90,
+      price: 300
+    }
+  }
+
+  value: number = 0
+  price: number = 0
+
+  ionViewDidLoad() {
+    this.LHR()
+    this.day()
+  }
 
   CPage() {this.navCtrl.push(ChartsPage)}
 
-  week() {
+  day() {
     this.lineChartData = [{
-      data: [5, 59, 80, 1, 56, 55, 30, 180, 65, 9, 80, 81, 56, 5, 90, 10],
+      data: [5, 59, 80, 300, 56, 55, 30, 180, 65, 9, 80, 81, 56, 5, 90, 10, 5, 59, 80, 1, 56, 55, 30, 180, 65, 9, 80, 81, 56, 5, 90, 10],
       label: '',
     }]
   }
+
+  week() {
+    this.lineChartData = [{
+      data: [5, 59, 80, 1, 56, 55, 30, 180, 65, 9, 80, 81, 56, 5, 90, 20],
+      label: '',
+    }]
+  }
+
+  month() {
+    this.lineChartData = [{
+      data: [5, 59, 80, 1, 56, 55, 30, 180, 65, 9, 80, 81, 56, 5, 90, 100],
+      label: '',
+    }]
+  }
+
+  sixmonths() {
+    this.lineChartData = [{
+      data: [5, 59, 80, 1, 56, 55, 30, 180, 65, 9, 80, 81, 56, 5, 90, 200],
+      label: '',
+    }]
+  }
+
+  year() {
+    this.lineChartData = [{
+      data: [5, 59, 80, 20, 56, 55, 30, 180, 65, 9, 80, 81, 56, 5, 90, 2000],
+      label: '',
+    }]
+  }
+
+  all() {
+    this.lineChartData = [{
+      data: [5, 59, 80, 20, 56, 55, 30, 180, 65, 9, 80, 81, 56, 5, 90, 5000],
+      label: '',
+    }]
+  }
+
+
+
+  LHR() {
+    console.log(this.values)
+    this.value = this.values.LHR.valueA
+    this.price = this.values.LHR.price
+  }
+
+  MRC() {
+    this.value = this.values.MHR.valueA
+    this.price = this.values.MHR.price
+  }
+
+
+  HRC() {
+    this.value = this.values.HHR.valueA
+    this.price = this.values.HHR.price
+  }
+
+
+
+
+
 
 }

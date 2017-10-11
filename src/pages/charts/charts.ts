@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ContactPage } from '../contact/contact';
+import { Pie2Page } from '../pie2/pie2';
 
 @IonicPage()
 @Component({
@@ -44,6 +45,10 @@ export class ChartsPage {
       }
     }
     this.loadScreen(this.tapCount)
+  }
+  showPiecharts() {
+    let count = {count: this.tapCount}
+    this.navCtrl.push(Pie2Page, count)
   }
 
   loadScreen(count) {
