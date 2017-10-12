@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { Pie2Page } from './pie2';
+import { PieChartPage } from './piechart';
 
 @NgModule({
   declarations: [
-    Pie2Page,
+    PieChartPage,
   ],
   imports: [
-    IonicPageModule.forChild(Pie2Page),
+    IonicPageModule.forChild(PieChartPage),
   ],
 })
-export class Pie2PageModule {}
+export class PieChartPageModule {}
