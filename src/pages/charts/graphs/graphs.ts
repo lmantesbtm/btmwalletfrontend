@@ -18,7 +18,7 @@ export class GraphsPage {
   }
 
   public lineChartData:Array<any> = [
-  {data: [65, 59, 80, 81, 56, 55, 90, 100], label: ''},
+  {data: [65, 59, 80, 81, 56, 55, 90, 30], label: ''},
   ];
 
   public lineChartLabels:Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August'];
