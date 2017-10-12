@@ -9,29 +9,29 @@ page-charts {
 .mascot {
   width: 60%;
   vertical-align: middle;
-  margin-top: -2.75em;
+  margin-top: -2.60em;
 }
 
 .left-arrow {
-  width: 10%;
+  width: 8%;
   position: absolute;
-  right: 91%;
-  top: 21%;
+  right: 94%;
+  top: 25%;
 }
 
 .right-arrow {
-  width: 10%;
+  width: 8%;
   position: absolute;
-  left: 91%;
-  top: 20%;
+  left: 94%;
+  top: 25%;
 }
 
 .header-color {
-  background-color: aliceblue;
+  background-color: #202A3F;
+  color: #ffffff;
 }
 
 .bar-header {
-    border: 0px !important;
     border-bottom-color: transparent !important;
     background-image: none !important;
     border-bottom: none !important;
@@ -39,15 +39,21 @@ page-charts {
 
 .risk-numbers {
   font-size: 25px;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .risk-price {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 100;
 }
 
 .risk-border {
   border-bottom: 1px solid #aaa;
-  box-shadow: 0 5px 20px 3px #888888;
+  box-shadow: 0 5px 20px 2px #888888;
+}
+
+.price-style{
+  color: #40C5F2;
+  font-weight: 500;
+  font-size: 30px;
 }

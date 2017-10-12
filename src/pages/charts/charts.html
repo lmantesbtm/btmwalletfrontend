@@ -4,36 +4,36 @@
   <ion-grid>
     <ion-row>
       <ion-col text-center>
-        <img src="assets/images/arrow3-01.png" class="left-arrow" alt="" (click)="changeMascot('left')">
+        <img src="assets/images/arrow3-01.png" class="left-arrow" alt="" (click)="changeMascot('left') ">
         <img [src]="img" alt="" class="mascot" >
         <img src="assets/images/arrow3-02.png" class="right-arrow" alt="" (click)="changeMascot('right')">
       </ion-col>
     </ion-row>
     <ion-row text-center>
       <ion-col>
-        <ion-label>{{risk}}</ion-label>
+        <ion-label style="color:#202A3F; font-size:17px; font-weight:700;">{{risk}}</ion-label>
       </ion-col>
     </ion-row>
     <ion-row text-center class="header-color">
       <ion-col col-4>
-        <label>Price</label>
+        <label>Current Price</label>
       </ion-col>
       <ion-col col-4>
         <label>Holdings</label>
       </ion-col>
       <ion-col col-4>
-        <label>Value</label>
+        <label>Net Value</label>
       </ion-col>
     </ion-row>
     <ion-row text-center>
       <ion-col col-4>
-        <ion-label>{{price}}</ion-label>
+        <ion-label class="price-style">{{price}}</ion-label>
       </ion-col>
       <ion-col col-4>
-          <ion-label>{{holding}}</ion-label>
+          <ion-label class="price-style">{{holding}}</ion-label>
       </ion-col>
       <ion-col col-4>
-        <ion-label>{{value}}</ion-label>
+        <ion-label class="price-style">{{value}}</ion-label>
       </ion-col>
     </ion-row>
     <ion-row text-center>

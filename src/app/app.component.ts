@@ -16,7 +16,8 @@ import { SettingsPage } from '../pages/settings/settings';
 import { ContactPage } from '../pages/contact/contact';
 import { LoginPinPage } from '../pages/pre-login/login-pin/login-pin';
 import { RegisterPage } from '../pages/register/register';
-
+import { LoginVerifyPage } from '../pages/pre-login/login-verify/login-verify'
+import { LoginPage } from '../pages/pre-login/login/login'
 @Component({
   templateUrl: 'app.html'
 })
@@ -26,7 +27,7 @@ export class MyApp {
   @ViewChild('sidemenu') navCtrl: NavController;
 
   //rootPage:any = TabsPage;
-  rootPage: any = LoginPinPage;
+  rootPage: any = ChartsPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
