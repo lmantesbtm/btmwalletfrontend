@@ -57,7 +57,7 @@ export class ChartsPage {
 
   loadScreen(count) {
     this.img = 'assets/images/coins-0'+ count + '.png'
-    this.risk = this.riskDescription[count] + ' RISK INVESTMENT';
+    this.risk = this.riskDescription[count] + ' RISK INVESTMENT PRICE';
     this.price = this.priceDescription[count]
     this.holding = this.holdingDescription[count]
     this.value = this.valueDescription[count]
