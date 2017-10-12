@@ -1,0 +1,44 @@
+.pie-container {
+  width: 100%;
+  height: 45vh;
+}
+
+#pie-size {
+  height: 100px;
+  width: 80px;
+}
+
+.grid {
+  padding: 0;
+
+  .portfolio-container {
+    margin-top: 10px;
+
+    .risk-investment {
+      font-size: 14px;
+    }
+  }
+
+  .green-header-bg {
+    background-color: #1ea587;
+    width: 100%;
+    height: 45px;
+    margin-bottom: 5px;
+
+    .col {
+      margin-top: 0.75em;
+      font-size: 14px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+  }
+
+  .portfolio {
+    .row {
+      height: 35px;
+    }
+
+  }
+
+}

@@ -42,6 +42,7 @@ import { TabsFooterComponent } from '../components/tabs-footer/tabs-footer';
 import { ChartsPage } from '../pages/charts/charts';
 import { ChartsModule } from 'ng2-charts';
 import { GraphsPage } from '../pages/charts/graphs/graphs';
+import { PieChartPage } from '../pages/charts/piechart/piechart';
 
 // Double Click
 import { DoubleclickDirective } from '../directives/doubleclick/doubleclick';
@@ -83,6 +84,7 @@ import { PayPal } from '@ionic-native/paypal';
 
     ChartsPage,
     GraphsPage,
+    PieChartPage,
 
     LoginLogoComponent,
     NavbarComponent,
@@ -125,6 +127,7 @@ import { PayPal } from '@ionic-native/paypal';
 
     ChartsPage,
     GraphsPage,
+    PieChartPage,
 
     LoginLogoComponent,
     NavbarComponent,
