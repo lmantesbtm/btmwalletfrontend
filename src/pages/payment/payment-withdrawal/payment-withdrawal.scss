@@ -5,3 +5,22 @@ page-payment-withdrawal {
 .no-scroll .scroll-content {
   overflow: hidden;
 }
+
+.wtop-container {
+  font-size: 18px;
+  font-weight: bold;
+
+  .remaining-bg {
+    background-color: #333d4d;
+    color: #ffffff;
+    height: 30px;
+    margin-top: 5px;
+
+    .col {
+      margin-top: 0em;
+      font-size: 16px;
+      font-weight: normal;
+    }
+  }
+
+}

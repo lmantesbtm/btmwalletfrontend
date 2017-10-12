@@ -4,39 +4,72 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ion-grid>
-    <ion-row>
-      <ion-col col-4>
-        <img src="assets/images/coins-01.png" alt="">
-      </ion-col>
-      <ion-col col-4>
-        <img src="assets/images/coins-02.png" alt="">
-      </ion-col>
-      <ion-col col-4>
-        <img src="assets/images/coins-03.png" alt="">
-      </ion-col>
-    </ion-row>
-    <ion-row class="coin-dropdown">
-      <ion-col col-4>
-        <input type="text" name="" value="" placeholder="LRC" class="risk-value">
-      </ion-col>
-      <ion-col col-4>
-        <input type="text" name="" value="" placeholder="MRC" class="risk-value">
-      </ion-col>
-      <ion-col col-4>
-        <input type="text" name="" value="" placeholder="HRC" class="risk-value">
-      </ion-col>
-    </ion-row>
+    <div class="wtop-container" *ngIf="withdraw" text-center padding-top padding-bottom>
+      <div class="remaining-bg" text-center padding-left padding-right>
+        <ion-row>
+          <ion-col col-4>
+            <label>321</label>
+          </ion-col>
+          <ion-col col-4>
+            <label>14</label>
+          </ion-col>
+          <ion-col col-4>
+            <label>9</label>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+    <div class="" padding-left padding-right margin-top>
+      <ion-row>
+        <ion-col col-4>
+          <img src="assets/images/coins-01.png" alt="">
+        </ion-col>
+        <ion-col col-4>
+          <img src="assets/images/coins-02.png" alt="">
+        </ion-col>
+        <ion-col col-4>
+          <img src="assets/images/coins-03.png" alt="">
+        </ion-col>
+      </ion-row>
+    </div>
+    <div class="risk-deposit" padding-left padding-right>
+      <ion-row class="">
+        <ion-col col-4>
+          <input type="text" name="" value="00" placeholder="LRC">
+        </ion-col>
+        <ion-col col-4>
+          <input type="text" name="" value="00" placeholder="MRC">
+        </ion-col>
+        <ion-col col-4>
+          <input type="text" name="" value="00" placeholder="HRC">
+        </ion-col>
+      </ion-row>
+    </div>
+    <div class="green-header-bg" padding-left padding-right margin-top>
+      <ion-row text-center>
+        <ion-col col-4>
+          <label>20.10</label>
+        </ion-col>
+        <ion-col col-4>
+          <label>10.00</label>
+        </ion-col>
+        <ion-col col-4>
+          <label>7.00</label>
+        </ion-col>
+      </ion-row>
+    </div>
+    <div class="blue-header-bg" text-center>
+      <ion-row>
+        <ion-col>
+          <label>Total {{title}}: MYR 37.10</label>
+        </ion-col>
+      </ion-row>
+    </div>
+
   </ion-grid>
   <ion-grid>
-    <ion-row>
-      <ion-col text-center>
-        <div class="rounded-border">
-          <ion-label>Total: MYR 100.00</ion-label>
-        </div>
-      </ion-col>
-    </ion-row>
     <page-payment-deposit *ngIf="deposit"></page-payment-deposit>
     <page-payment-withdrawal *ngIf="withdraw"></page-payment-withdrawal>
   </ion-grid>
