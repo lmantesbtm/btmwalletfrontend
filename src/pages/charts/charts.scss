@@ -27,7 +27,34 @@ page-charts {
 }
 
 .header-color {
-  background-color: aliceblue;
+  background-color: #1EA587;
+  label {
+    color: #ffffff;
+    font-size: 15px;
+  }
+}
+
+.risk-investment {
+  font-size: 16px;
+  color: #1EA587;
+  font-weight: bold;
+}
+
+.risk-values {
+  .label {
+    font-size: 26px;
+    color: #40C5f2;
+    margin: 0;
+  }
+}
+
+.risk-inv-label {
+  .label {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 100;
+  }
 }
 
 .bar-header {
@@ -42,12 +69,14 @@ page-charts {
   font-weight: bold;
 }
 
-.risk-price {
-  font-size: 18px;
-  font-weight: 100;
+.risk-border {
+  border-top: 1px solid #f4f4f4;
+  box-shadow: inset 0 3px 20px 0px #f4f4f4;
+  position: absolute;
+  left: 0;
+  width: 100vw
 }
 
-.risk-border {
-  border-bottom: 1px solid #aaa;
-  box-shadow: 0 5px 20px 3px #888888;
+.top-container {
+  padding: 0;
 }
