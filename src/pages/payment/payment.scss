@@ -22,26 +22,10 @@ page-payment {
   .active .modal-backdrop-bg {
     opacity: 0.5;
   }
-}
-
-.circle {
-  height: 25vw;
-  width: 25vw;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  box-shadow: 0 0 5px gray;
-  display: inline-block;
-  text-align: center;
-  line-height: 65px;
-  padding-left: 5px;
-  font-size: 35px;
-  font-weight: bold;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.coin-dropdown {
-  margin-top: 10px;
+  .content {
+    background-color: #000000;
+    color: #ffffff;
+  }
 }
 
 .rounded-border {
@@ -54,27 +38,30 @@ page-payment {
   margin-top: 20px;
 }
 
-.border-img {
-  border: 2px solid #000;
-  border-radius: 28px;
-  max-width: 64%;
-  border-color: #dcdcdc;
+.risk-deposit {
+  input {
+    border-radius: 5px;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    margin-left: 25%;
+    background-image: linear-gradient(to bottom, #011019 0px, #40c5f2 19px, #01101b 35px);
+    border: 0;
+    font-size: 25px;
+  }
 }
 
-.risk-value {
-  border-radius: 5px;
-  width: 50%;
-  height: 40px;
-  text-align: center;
-  margin-left: 25%;
-}
+.blue-header-bg {
+  background-color: #45b3cc;
+  height: 45px;
+  margin-top: -4px;
 
-.card-img {
-  height: 50px;
-}
+  .col {
+    margin-top: 0.25em;
+    font-size: 20px;
+    color: #000000;
+  }
 
-.col-img {
-  height: 65px;
 }
 
 .btn-size {

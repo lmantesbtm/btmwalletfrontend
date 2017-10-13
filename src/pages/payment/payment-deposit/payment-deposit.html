@@ -1,21 +1,28 @@
-<ion-row text-center>
-  <ion-col offset-2 class="col-img border-img">
-    <img src="https://seeklogo.com/images/V/visa-logo-6F4057663D-seeklogo.com.png" alt="VISA" class="card-img">
-    <img src="https://seeklogo.com/images/M/mastercard-logo-473B8726A9-seeklogo.com.png" alt="MASTERCARD" class="card-img">
-  </ion-col>
-</ion-row>
-<ion-row>
-  <ion-col text-center>
-    <ion-label>Your Recurring Deposit Date is<br>1st of Every Month</ion-label>
-  </ion-col>
-</ion-row>
-<ion-row>
-  <ion-col text-center>
-    <button type="button" name="button" ion-button class="btn-size" (click)="makePayment()">Paypal</button>
-  </ion-col>
-</ion-row>
-<ion-row>
-  <ion-col text-center>
-    <button type="button" name="button" ion-button class="btn-size" (click)="openPaymentModal()">Pay</button>
-  </ion-col>
-</ion-row>
+<div class="deposit-container" text-center>
+  <label>Payment Options:</label>
+  <ion-row>
+    <ion-col>
+      <div class="border-img">
+        <img src="https://seeklogo.com/images/V/visa-logo-6F4057663D-seeklogo.com.png" alt="VISA">
+      </div>
+      <div class="border-img">
+        <img src="https://seeklogo.com/images/M/mastercard-logo-473B8726A9-seeklogo.com.png" alt="MASTERCARD">
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-label>Your Recurring Deposit Date is<br>1st of Every Month</ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <button type="button" name="button" ion-button class="btn-size" (click)="makePayment()">Paypal</button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <button type="button" name="button" ion-button class="btn-size" (click)="openPaymentModal()">Pay</button>
+    </ion-col>
+  </ion-row>
+</div>

@@ -10,3 +10,23 @@ page-payment-deposit {
 .page-height {
   height: 255px;
 }
+
+.deposit-container {
+  margin-top: 10px;
+
+  .border-img {
+    margin-top: 10px;
+    border: 1px solid #000;
+    border-radius: 28px;
+    width: 100px;
+    border-color: #1ea587;
+    display: inline-block;
+
+    img {
+      height: 45px;
+      padding: 4px;
+      vertical-align: middle;
+    }
+
+  }
+}
