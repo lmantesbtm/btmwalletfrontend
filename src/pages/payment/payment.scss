@@ -38,13 +38,6 @@ page-payment {
   margin-top: 20px;
 }
 
-.border-img {
-  border: 2px solid #000;
-  border-radius: 28px;
-  max-width: 64%;
-  border-color: #dcdcdc;
-}
-
 .risk-deposit {
   input {
     border-radius: 5px;
@@ -62,6 +55,7 @@ page-payment {
   background-color: #45b3cc;
   height: 45px;
   margin-top: -4px;
+
   .col {
     margin-top: 0.25em;
     font-size: 20px;
