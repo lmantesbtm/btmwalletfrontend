@@ -5,41 +5,65 @@
 </ion-header>
 <ion-content padding>
   <ion-grid>
-    <ion-row class="inv-border">
-      <ion-col col-4 class="inv-center">
-        <img src="assets/images/black_icon/icon-black-03.png" alt="" class="v-img">
-        <label class="risk-label">LRC</label>
-      </ion-col>
-      <ion-col col-8 >
-        <label class="inv-total">MYR 243</label>
-      </ion-col>
-    </ion-row>
-    <ion-row class="inv-border">
-      <ion-col col-4 class="inv-center">
-        <img src="assets/images/black_icon/icon-black-03.png" alt="" class="v-img">
-        <label class="risk-label">MRC</label>
-      </ion-col>
-      <ion-col col-8>
-        <label class="inv-total">MYR 145</label>
-      </ion-col>
-    </ion-row>
-    <ion-row class="inv-border">
-      <ion-col col-4 class="inv-center">
-        <img src="assets/images/black_icon/icon-black-03.png" alt="" class="v-img">
-        <label class="risk-label">HRC</label>
-      </ion-col>
-      <ion-col col-8>
-        <label class="inv-total">MYR 27</label>
-      </ion-col>
-    </ion-row>
-    <ion-row class="inv-border">
-      <ion-col col-4 class="inv-center">
-        <label class="risk-label">Total<br>Investment</label>
-      </ion-col>
-      <ion-col col-8>
-        <label class="inv-total">MYR 415</label>
-      </ion-col>
-    </ion-row>
+    <div class="wallet-container" text-center>
+      <div class="wallet-img">
+        <img src="assets/images/wallet-icon.png" alt="">
+      </div>
+      <div class="wallet-list">
+        <ion-row>
+          <ion-col col-4 class="inv-center">
+            <img src="assets/images/coins-01.png" alt="" class="v-img">
+            <label class="coin-label">LRC COIN</label>
+          </ion-col>
+          <ion-col col-8 >
+            <label class="inv-total">3</label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-4 class="inv-center">
+            <img src="assets/images/coins-02.png" alt="" class="v-img">
+            <label class="coin-label">MRC COIN</label>
+          </ion-col>
+          <ion-col col-8>
+            <label class="inv-total">5</label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-4 class="inv-center">
+            <img src="assets/images/coins-03.png" alt="" class="v-img">
+            <label class="coin-label">HRC COIN</label>
+          </ion-col>
+          <ion-col col-8>
+            <label class="inv-total">7</label>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div class="green-header-bg">
+        <ion-row>
+          <ion-col col-4>
+            <img src="assets/images/white_icon/icon-white-03.png" alt="" class="v-img">
+            <label class="coin-label">TOTAL COINS</label>
+          </ion-col>
+          <ion-col col-8>
+            <label class="inv-total">15</label>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div class="ws-circle">
+        <div class="asc-total">
+          <ion-row>
+            <ion-col>
+              <label class="inv-total">MYR 6.00</label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <label class="coin-label">AVAILABLE SPARE CHANGE</label>
+            </ion-col>
+          </ion-row>
+        </div>
+      </div>
+    </div>
   </ion-grid>
 </ion-content>
 <tabs-footer></tabs-footer>
