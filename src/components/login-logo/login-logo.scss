@@ -2,10 +2,30 @@ login-logo {
 
 }
 
-.remove_space_top {
-  height: 0;
+.odin-logo {
+  display: block;
+  background-color: #40c5f2;
+  height: 40vh;
+
+  img {
+    margin-top: 20vh;
+  }
 }
 
-.add_space_top {
-  height: 141px;
+.reduce_margin_top {
+  margin-top: 10vh!important;
+}
+
+.reduce_height {
+  height: 35vh!important;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.hide_logo {
+  display: none;
+}
+
+.show_logo {
+  display: inline-block;
 }

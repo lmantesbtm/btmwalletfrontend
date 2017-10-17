@@ -1,5 +1,6 @@
-<!-- Generated template for the LoginLogoComponent component -->
-<div [ngClass]="setClass()" #pagename style="color:#83E8FC">{{pageName}}</div>
-<div>
-  <img src="assets/images/odin.png" style="display: block; height: auto; margin-left: auto; margin-right: auto;">
+<!-- DO NOT REMOVE THIS PART -->
+<div #pagename style="position: absolute; color:rgba(0,0,0,0)">{{pageName}}</div>
+
+<div class="odin-logo" [ngClass]="setOdinClass()" text-center>
+  <img src="assets/images/odin.png" [ngClass]="setClass()">
 </div>

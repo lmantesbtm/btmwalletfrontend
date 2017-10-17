@@ -23,6 +23,6 @@ export class LoginPage {
   }
 
   login() {
-    this.navCtrl.push(LoginPinPage)
+    this.navCtrl.push(LoginPinPage, {prevPage: 'login'})
   }
 }

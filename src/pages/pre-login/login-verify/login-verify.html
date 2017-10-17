@@ -1,24 +1,25 @@
-<ion-content padding class="login-back-color">
+<ion-content class="login-back-color">
   <login-logo></login-logo>
-  <h4 id="page13-heading12" class="login-h4">LOST YOUR PASSWORD?</h4>
-  <body>
-  <div class="white-box" style="text-align:center; margin-left:7.5%;"></div>
-  </body>
-  <form id="page13-form11" class="list" style="text-align:center; margin-left:15.0px;">
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <input type="text" margin-text="left" placeholder="Email / Mobile number" class="register-input-box">
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <input type="text" margin-text="left" placeholder="Date of Birth" class="register-input-box">
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </form>
-    <button id="page13-button13" class="button button-positive button-block green-button" ion-button (click)="verify()">Verify Me</button>
-    <button id="page11-heading3" class="return_login" (click)="XXXXX()">Return To Login</button>
-    <button id="page11-heading3" class="faq_btn"  (click)="XXXXX()">FAQ</button>
+  <div class="white-box">
+    <h4 class="login-h4">LOST YOUR PASSWORD?</h4>
+    <form text-center class="list">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <input type="text" margin-text="left" placeholder="Email / Mobile number" class="register-input-box">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <input type="text" margin-text="left" placeholder="Date of Birth" class="register-input-box">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+  <div class="login-btn-container" text-center>
+    <button class="button button-positive button-block green-button" ion-button (click)="verify()">VERIFY ME</button>
+    <label (click)="XXXXX()">Return To Login</label>
+  </div>
+  <label class="faq_btn" (click)="faq()">FAQ</label>
 </ion-content>

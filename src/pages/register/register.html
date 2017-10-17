@@ -1,78 +1,86 @@
-<ion-content padding class="login-back-color">
+<ion-content class="login-back-color has-footer" >
   <login-logo></login-logo>
-  <h4 id="page11-heading1" class="login-h4">REGISTER</h4>
-  <div class="spacer"></div>
-  <div class="white-box-register" style="text-align:center; margin-left:7.5%;">
-  <form class="">
-    <ion-grid>
-      <ion-row>
-        <ion-col col-12>
-          <input type="text" name="" placeholder="First Name" value="" class="register-input-box">
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col col-12>
-          <input type="text" name="" placeholder="Last Name" value="" class="register-input-box">
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col col-12>
-          <input type="text" name="" placeholder="Date of Birth" value="" class="register-input-box">
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col col-12>
-          <input type="text" name="" placeholder="Email ID" value="" class="register-input-box">
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col col-12>
-          <input type="text" name="" placeholder="Mobile Number" value="" class="register-input-box">
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <h5 id="page10-heading5" style="font-size:15px;text-align:center;padding-top:20px;">Security Question Choice 1</h5>
-          <select text-align="left" class="register-select-box">
-            <option>Select Security Question 1 Here</option>
-            <option>What is your Pets Name</option>
-            <option>What is your Pets Name</option>
-            <option>What is your Pets Name</option>
-            <option>What is your Pets Name</option>
-            <option>What is your Pets Name</option>
-          </select>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col col-12>
-          <input type="text" name="" placeholder="Security Question Choice 1 Answer" value="" class="register-input-box">
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <h5 id="page10-heading5"style="font-size:15px;text-align:center;padding-top:20px;">Security Question Choice 2</h5>
-          <select text-align="left" class="register-select-box">
-            <option>Select Security Question 2 Here</option>
-            <option>What is your Car Number</option>
-            <option>What is your Car Number</option>
-            <option>What is your Car Number</option>
-            <option>What is your Car Number</option>
-            <option>What is your Car Number</option>
-          </select>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col col-12>
-          <input type="text" name="" placeholder="Security Question Choice 2 Answer" value="" class="register-input-box">
-        </ion-col>
-      </ion-row>
-      <div style="margin-top:20px;"></div>
-      <button id="page10-button11" class="button button-positive button-small top green-button register-blue-button" ion-button>Register</button>
-      <div style="margin-top:5px;"></div>
-      <button id="page11-heading3" class="return_btn button" (click)="viewCtrl.dismiss()">Return to Login</button>
-      <button id="page11-heading3" class="faq_btn_reg_right"  (click)="XXXXX()">FAQ</button>
-      <button id="page11-heading3" class="faq_btn_reg_left"  (click)="XXXXX()">TERMS AND CONDITIONS</button>
-    </ion-grid>
-  </form>
+  <div class="reg-spacer"></div>
+  <div class="white-box-register">
+    <h4 class="login-h4">REGISTER</h4>
+    <form text-center>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6>
+            <input type="text" name="" placeholder="First Name" value="" class="register-input-box">
+          </ion-col>
+          <ion-col col-6>
+            <input type="text" name="" placeholder="Last Name" value="" class="register-input-box">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12>
+            <input type="text" name="" placeholder="Date of Birth" value="" class="register-input-box">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12>
+            <input type="text" name="" placeholder="Email ID" value="" class="register-input-box">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12>
+            <input type="text" name="" placeholder="Mobile Number" value="" class="register-input-box">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <h5 id="page10-heading5" style="font-size:15px;text-align:center;padding-top:20px;">Security Question Choice 1</h5>
+            <select text-align="left" class="register-select-box">
+              <option>Select Security Question 1 Here</option>
+              <option>What is your Pets Name</option>
+              <option>What is your Pets Name</option>
+              <option>What is your Pets Name</option>
+              <option>What is your Pets Name</option>
+              <option>What is your Pets Name</option>
+            </select>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12>
+            <input type="text" name="" placeholder="Security Question Choice 1 Answer" value="" class="register-input-box">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <h5 id="page10-heading5"style="font-size:15px;text-align:center;padding-top:20px;">Security Question Choice 2</h5>
+            <select text-align="left" class="register-select-box">
+              <option>Select Security Question 2 Here</option>
+              <option>What is your Car Number</option>
+              <option>What is your Car Number</option>
+              <option>What is your Car Number</option>
+              <option>What is your Car Number</option>
+              <option>What is your Car Number</option>
+            </select>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12>
+            <input type="text" name="" placeholder="Security Question Choice 2 Answer" value="" class="register-input-box">
+          </ion-col>
+        </ion-row>
+        <button class="button button-positive button-small green-button" ion-button (click)="showPin()">Register</button>
+        <label (click)="viewCtrl.dismiss()">Return to Login</label>
+      </ion-grid>
+    </form>
+  </div>
+  <div class="footer-section">
+    <ion-row>
+      <ion-col>
+        <label (click)="toc()">TERMS AND CONDITIONS</label>
+      </ion-col>
+      <ion-col text-right>
+        <label (click)="faq()" >FAQ</label>
+      </ion-col>
+    </ion-row>
   </div>
 </ion-content>
+
+<ion-footer>
+
+</ion-footer>

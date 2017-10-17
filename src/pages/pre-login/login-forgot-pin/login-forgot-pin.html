@@ -1,0 +1,31 @@
+<ion-content>
+  <login-logo></login-logo>
+  <div class="white-box">
+    <h4 class="login-h4">FORGOT PIN</h4>
+    <form text-center>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <select text-align="left" class="register-select-box">
+              <option>Select Security Question 1 Here</option>
+              <option>What is your Pets Name</option>
+              <option>What is your Pets Name</option>
+              <option>What is your Pets Name</option>
+              <option>What is your Pets Name</option>
+              <option>What is your Pets Name</option>
+            </select>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <input type="text" placeholder="Security Question Answer"  class="register-input-box">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+  <div class="login-btn-container" text-center>
+    <button class="button button-positive button-block green-button" ion-button (click)="verify()">NEXT</button>
+  </div>
+  <label class="faq_btn" (click)="faq()">FAQ</label>
+</ion-content>

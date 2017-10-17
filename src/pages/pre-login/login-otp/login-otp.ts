@@ -13,11 +13,11 @@ export class LoginOtpPage {
 
   constructor(public navCtrl: NavController, public viewCtrl: ViewController, public navParams: NavParams) {
     if (this.isPassword()) {
-      this.header = "One Time Password"
-      this.btnContent = "I am Done"
+      this.header = "ONE TIME PASSWORD"
+      this.btnContent = "CONFIRM"
     } else {
-      this.header = "Enter One Time Passcode Here"
-      this.btnContent = "Reset Password"
+      this.header = "ENTER ONE TIME PIN"
+      this.btnContent = "CONFIRM"
     }
   }
 
@@ -30,7 +30,6 @@ export class LoginOtpPage {
   }
 
   private isPassword(): boolean {
-    //return this.navParams.get("isPassword")
-    return true;
+    return this.navParams.get("isPassword")
   }
 }

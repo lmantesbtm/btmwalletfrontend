@@ -1,57 +1,62 @@
-<ion-content style="background-color:#F4F4F4;">
-  <h4 id="" class="login-h4" style="padding-top:29%;">SELECT PIN</h4>
-  <ion-grid>
-    <ion-row text-center>
-      <ion-col>
-        <div class="circle-pin" col-3></div>
-        <div class="circle-pin" col-3></div>
-        <div class="circle-pin" col-3></div>
-        <div class="circle-pin" col-3></div>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-  <div class="spacer"></div>
-  <ion-grid text-center>
-    <ion-row>
-      <ion-col col-4>
-        <button type="button" name="button" class="round-button" ion-button>1</button>
-      </ion-col>
-      <ion-col col-4>
-        <button type="button" name="button" class="round-button" ion-button>2</button>
-      </ion-col>
-      <ion-col col-4>
-        <button type="button" name="button" class="round-button" ion-button>3</button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col col-4>
-        <button type="button" name="button" class="round-button" ion-button>4</button>
-      </ion-col>
-      <ion-col col-4>
-        <button type="button" name="button" class="round-button" ion-button>5</button>
-      </ion-col>
-      <ion-col col-4>
-        <button type="button" name="button" class="round-button" ion-button>6</button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col col-4>
-        <button type="button" name="button" class="round-button" ion-button>7</button>
-      </ion-col>
-      <ion-col col-4>
-        <button type="button" name="button" class="round-button" ion-button>8</button>
-      </ion-col>
-      <ion-col col-4>
-        <button type="button" name="button" class="round-button" ion-button>9</button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col col-4 offset-4>
-        <button type="button" name="button" class="round-button" ion-button>0</button>
-      </ion-col>
-      <ion-col col-4>
-        <img src="assets/images/pin-delete.png" style="display: block; height: 20px; margin-top:25%; margin-left: auto; margin-right: auto;" (click)="mainScreen()">
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+<ion-content class="login-back-color">
+  <login-logo pageName="{{ prevPage }}"></login-logo>
+  <div class="pin-container">
+    <h4 class="login-h4">{{ pin_label }}</h4>
+    <ion-grid text-center>
+      <div class="circle-pins">
+        <ion-row>
+          <ion-col>
+            <div class="circle-pin" col-3></div>
+            <div class="circle-pin" col-3></div>
+            <div class="circle-pin" col-3></div>
+            <div class="circle-pin" col-3></div>
+          </ion-col>
+        </ion-row>
+      </div>
+      <ion-row>
+        <ion-col col-4>
+          <button type="button" name="button" class="round-button" ion-button (click)="inputPin('1')">1</button>
+        </ion-col>
+        <ion-col col-4>
+          <button type="button" name="button" class="round-button" ion-button (click)="inputPin('2')">2</button>
+        </ion-col>
+        <ion-col col-4>
+          <button type="button" name="button" class="round-button" ion-button (click)="inputPin('3')">3</button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-4>
+          <button type="button" name="button" class="round-button" ion-button (click)="inputPin('4')">4</button>
+        </ion-col>
+        <ion-col col-4>
+          <button type="button" name="button" class="round-button" ion-button (click)="inputPin('5')">5</button>
+        </ion-col>
+        <ion-col col-4>
+          <button type="button" name="button" class="round-button" ion-button (click)="inputPin('6')">6</button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-4>
+          <button type="button" name="button" class="round-button" ion-button (click)="inputPin('7')">7</button>
+        </ion-col>
+        <ion-col col-4>
+          <button type="button" name="button" class="round-button" ion-button (click)="inputPin('8')">8</button>
+        </ion-col>
+        <ion-col col-4>
+          <button type="button" name="button" class="round-button" ion-button (click)="inputPin('9')">9</button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-4 offset-4>
+          <button type="button" name="button" class="round-button" ion-button (click)="inputPin('0')">0</button>
+        </ion-col>
+        <ion-col col-4>
+          <img src="assets/images/pin-delete.png" style="display: block; height: 20px; margin-top:25%; margin-left: auto; margin-right: auto;" (click)="mainScreen()">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <div *ngIf="prevPage!='register'" >
+    <label class="forgot-pin" (click)="forgotPin()">Forgot Pin</label>
+  </div>
 </ion-content>
