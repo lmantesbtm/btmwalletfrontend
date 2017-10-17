@@ -2,7 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { HttpModule } from '@angular/http';
-import { MyApp } from './app.component';
+import { Odin } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
@@ -58,7 +58,7 @@ import { PayPal } from '@ionic-native/paypal';
 
 @NgModule({
   declarations: [
-    MyApp,
+    Odin,
     AboutPage,
     ContactPage,
 
@@ -98,13 +98,13 @@ import { PayPal } from '@ionic-native/paypal';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
+    IonicModule.forRoot(Odin),
     HttpModule,
     ChartsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
+    Odin,
     AboutPage,
     ContactPage,
 
