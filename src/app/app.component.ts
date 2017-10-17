@@ -27,12 +27,12 @@ import { LoginOtpPage } from '../pages/pre-login/login-otp/login-otp';
   templateUrl: 'app.html'
 })
 
-export class MyApp {
+export class Odin {
   @ViewChild(Nav) nav: Nav;
   @ViewChild('sidemenu') navCtrl: NavController;
 
   //rootPage:any = TabsPage;
-  rootPage: any = RegisterPage;
+  rootPage: any = PreLoginPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

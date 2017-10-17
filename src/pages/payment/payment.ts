@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, ModalController, AlertController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-payment',
   templateUrl: 'payment.html',
 })
+
 export class PaymentPage {
   pageName: string;
   deposit: boolean;
@@ -12,8 +13,6 @@ export class PaymentPage {
   title: string;
 
   constructor(public navCtrl: NavController,
-              public modalCtrl: ModalController,
-              public alertCtrl: AlertController,
               public params: NavParams) {
   }
 
@@ -31,8 +30,8 @@ export class PaymentPage {
     }
   }
 
+  // get page name if deposit or withdraw
   getActivePage(): string {
-    //return this.params.get("page")
-    return "Withdraw"
+    return this.params.get("page")
   }
 }
