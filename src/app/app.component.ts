@@ -22,7 +22,7 @@ import { LoginPage } from '../pages/pre-login/login/login'
 import { LoginSetPasswordPage } from '../pages/pre-login/login-set-password/login-set-password'
 import { PieChartPage } from '../pages/charts/piechart/piechart';
 import { LoginOtpPage } from '../pages/pre-login/login-otp/login-otp';
-
+import { LoginSetPasswordPage } from '../pages/pre-login/login-set-password/login-set-password';
 @Component({
   templateUrl: 'app.html'
 })
