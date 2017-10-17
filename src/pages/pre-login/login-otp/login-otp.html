@@ -1,16 +1,24 @@
 <ion-content padding class="login-back-color">
   <login-logo></login-logo>
   <h4 id="" class="login-h4">{{header}}</h4>
-  <form id="page15-form14" class="list">
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <input type="password" *ngIf="isPassword()" placeholder="Insert one time password" margin-text="left" class="register-input-box">
-          <input type="password" *ngIf="isPassword()==false" placeholder="Input passcode here" margin-text="left" class="register-input-box">
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-    <button id="page15-button14" *ngIf="isPassword()" style="border-radius:20px 20px 20px 20px;" class="button button-positive button-block" ion-button (click)="setPassword()">{{btnContent}}</button>
-    <button id="page15-button14" *ngIf="isPassword()==false" style="border-radius:20px 20px 20px 20px;" class="button button-positive button-block" ion-button (click)="viewCtrl.dismiss()">{{btnContent}}</button>
-  </form>
-</ion-content>
+  <body>
+      <div class="white-box" style="text-align:center; margin-left:7.5%; height:80px;"></div>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </body>
+      <form id="page15-form14" class="list" style="text-align:center; margin-left:15.0px;">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <input type="password" *ngIf="isPassword()" placeholder="Insert one time password" margin-text="left" class="register-input-box">
+              <input type="password" *ngIf="isPassword()==false" placeholder="Input passcode here" margin-text="left" class="register-input-box">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        <button id="page15-button14" *ngIf="isPassword()" class="button button-positive button-block green-button" ion-button (click)="setPassword()">I'm Done</button>
+        <button id="page15-button14" *ngIf="isPassword()==false" class="button button-positive button-block" ion-button (click)="viewCtrl.dismiss()">I'm Done</button>
+      </form>

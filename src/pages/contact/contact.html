@@ -8,54 +8,56 @@
   <ion-grid>
     <ion-row text-center>
       <ion-col col-4>
-        <button ion-button color="secondary" class="my-width" small>
+        <button ion-button class="my-width button-md" small>
           <b>LRC</b>
         </button>
       </ion-col>
       <ion-col col-4>
-        <button ion-button color="default" class="my-width" small>
+        <button ion-button class="my-width button-md" small>
           <b>MRC</b>
         </button>
       </ion-col>
       <ion-col col-4>
-        <button ion-button color="default" class="my-width" small>
+        <button ion-button class="my-width button-md" small>
           <b>HRC</b>
         </button>
       </ion-col>
     </ion-row>
     <ion-row>
-    	<ion-col style="background-color:gray" text-center>
-        <label>10.1%<br>MYR 20</label>
+    	<ion-col style="background-color:#A9E2F3; height:95px; padding-top:5px; color:#ffffff;" text-center>
+        <label style="font-size: 40px; color:#202A3F; font-style: bold;">MYR 34.84</label>
+        <br>
+          <label style="font-size: 18px; color:#202A3F; padding-top:5px;">07/10/2017  13:47PM</label>
     	</ion-col>
     </ion-row>
-    <ion-row>
+    <ion-row class="tab-position">
       <ion-col col-2>
-        <button ion-button color="secondary" class="my-width2" small>
+        <button ion-button class="my-width2" small (click)="day()">
           <b>1D</b>
         </button>
       </ion-col>
       <ion-col col-2>
-        <button ion-button color="default" class="my-width2" small (click)="week()">
+        <button ion-button class="my-width2" small (click)="week()">
           <b>1W</b>
         </button>
       </ion-col>
       <ion-col col-2>
-        <button ion-button color="default" class="my-width2" small>
+        <button ion-button class="my-width2" small (click)="month()">
           <b>1M</b>
         </button>
       </ion-col>
       <ion-col col-2>
-        <button ion-button color="secondary" class="my-width2" small >
+        <button ion-button class="my-width2" small (click)="sixmonths()">
         	<b>6M</b>
         </button>
       </ion-col>
       <ion-col col-2>
-        <button ion-button color="default" class="my-width2" small>
+        <button ion-button class="my-width2" small (click)="year()">
         	<b>1Y</b>
         </button>
       </ion-col>
       <ion-col col-2>
-        <button ion-button color="default" class="my-width2" small>
+        <button ion-button class="my-width2" small (click)="all()">
           <b>ALL</b>
         </button>
       </ion-col>
