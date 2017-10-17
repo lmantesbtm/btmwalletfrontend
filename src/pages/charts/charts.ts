@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, MenuController } from 'ionic-angular';
 import { ContactPage } from '../contact/contact';
+import { PieChartPage } from './piechart/piechart';
 
 @IonicPage()
 @Component({
@@ -21,12 +22,16 @@ export class ChartsPage {
   holdingDescription: Array<string> = ['','100', '200', '300']
   valueDescription: Array<string> = ['','5100', '10400', '15900']
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public menuCtrl: MenuController) {
+
     this.loadScreen(this.tapCount);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ChartsPage');
+    this.menuCtrl.enable(true);
   }
 
   changeMascot(direction: string) {
@@ -46,9 +51,14 @@ export class ChartsPage {
     this.loadScreen(this.tapCount)
   }
 
+  showPiecharts() {
+    let count = {count: this.tapCount}
+    this.navCtrl.push(PieChartPage, count)
+  }
+
   loadScreen(count) {
     this.img = 'assets/images/coins-0'+ count + '.png'
-    this.risk = this.riskDescription[count] + ' RISK INVESTMENT';
+    this.risk = this.riskDescription[count] + ' RISK INVESTMENT PRICE';
     this.price = this.priceDescription[count]
     this.holding = this.holdingDescription[count]
     this.value = this.valueDescription[count]

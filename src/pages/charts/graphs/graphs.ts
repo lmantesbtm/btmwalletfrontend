@@ -18,7 +18,7 @@ export class GraphsPage {
   }
 
   public lineChartData:Array<any> = [
-  {data: [65, 59, 80, 81, 56, 55, 90, 100], label: ''},
+  {data: [65, 59, 80, 81, 56, 55, 80, 30], label: ''},
   ];
 
   public lineChartLabels:Array<any> = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August'];
@@ -44,15 +44,15 @@ export class GraphsPage {
 
   public lineChartColors:Array<any> = [
     { // grey
-      backgroundColor:'#00FFFF',
+      backgroundColor:'#40C5F2',
       borderColor: 'rgba(0,0,0,0)',
       pointBackgroundColor: 'rgba(0,0,0,0)',
       pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(148,159,177,0.8)',
+      pointHoverBackgroundColor: '#FF6E6E',
+      pointHoverBorderColor: 'rgba(255,255,255,0.5)',
       spanGaps: false,
-      pointHoverRadius: 5,
-      pointHoverBorderWidth: 2,
+      pointHoverRadius: 10,
+      pointHoverBorderWidth: 6,
       pointRadius: 1,
       pointHitRadius: 10,
     },

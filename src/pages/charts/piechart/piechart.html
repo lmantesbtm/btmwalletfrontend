@@ -1,0 +1,83 @@
+<ion-header >
+  <ion-navbar>
+    <ion-title>
+      Investment Portfolio
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <div class="pie-container" text-center>
+        <canvas baseChart id="pie-size" width="400" height="320"
+                    [data]="pieChartData"
+                    [labels]="pieChartLabels"
+                    [options]="options"
+                    [chartType]="pieChartType"
+                    (chartHover)="chartHovered($event)"
+                    (chartClick)="chartClicked($event)">
+        </canvas>
+      </div>
+    </ion-row>
+    <div class="portfolio-container">
+      <ion-row>
+        <ion-col text-center>
+          <label class="risk-investment">{{ risk }} RISK COIN PORTFOLIO</label>
+        </ion-col>
+      </ion-row>
+      <div class="green-header-bg" text-center>
+        <ion-row>
+          <ion-col>
+            <label>Wallet Address</label>
+          </ion-col>
+          <ion-col>
+            <label>Holdings</label>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div class="portfolio" text-center>
+        <ion-row>
+          <ion-col>
+            <label>34556dfdffdfdfd</label>
+          </ion-col>
+          <ion-col>
+            <label>10,000 BTC</label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <label>34556dfdffdfdfd</label>
+          </ion-col>
+          <ion-col>
+            <label>10,000 BTC</label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <label>34556dfdffdfdfd</label>
+          </ion-col>
+          <ion-col>
+            <label>10,000 BTC</label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <label>34556dfdffdfdfd</label>
+          </ion-col>
+          <ion-col>
+            <label>10,000 BTC</label>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <label>34556dfdffdfdfd</label>
+          </ion-col>
+          <ion-col>
+            <label>10,000 BTC</label>
+          </ion-col>
+        </ion-row>
+      </div>
+    </div>
+  </ion-grid>
+</ion-content>

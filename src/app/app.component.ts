@@ -10,9 +10,16 @@ import { InvestmentWalletPage } from '../pages/investment-wallet/investment-wall
 import { InvestmentLedgerPage } from '../pages/investment-ledger/investment-ledger';
 import { TransactionHistoryPage } from '../pages/transaction-history/transaction-history';
 import { PaymentPage } from '../pages/payment/payment';
+import { PaymentModalPage } from '../pages/payment/payment-modal/payment-modal';
 import { ChartsPage } from '../pages/charts/charts';
 import { ProfilePage } from '../pages/profile/profile';
-
+import { SettingsPage } from '../pages/settings/settings';
+import { ContactPage } from '../pages/contact/contact';
+import { LoginPinPage } from '../pages/pre-login/login-pin/login-pin';
+import { RegisterPage } from '../pages/register/register';
+import { LoginVerifyPage } from '../pages/pre-login/login-verify/login-verify'
+import { LoginPage } from '../pages/pre-login/login/login';
+import { LoginOtpPage } from '../pages/pre-login/login-otp/login-otp';
 @Component({
   templateUrl: 'app.html'
 })
@@ -33,6 +40,9 @@ export class MyApp {
     });
   }
 
+  settings(){
+    this.navCtrl.push(SettingsPage)
+  }
   profile(){
     this.navCtrl.push(ProfilePage)
   }

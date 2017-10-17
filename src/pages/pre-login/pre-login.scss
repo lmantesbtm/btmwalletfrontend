@@ -3,25 +3,26 @@ page-pre-login {
 }
 
 .login-back-color {
-  background-color:#83E8FC;
+  background-color:#40C5F2;
 }
 
 .round-button {
   border-radius: 50%;
   height: 65px;
   width: 65px;
+  font-size: 20px;
 }
 
 .blue-button {
   font-weight:600;
-  color:#000000;
+  color:#ffffff;
   border-radius:100px 100px 100px 100px;
 }
 
 .round-bg-pin {
-  border: 2px solid #bbbbbb;
+  border: 2px solid #ffffff;
   border-radius: 50%;
-  background-color: #bbbbbb;
+  background-color: #ffffff;
   font-size: 25px;
 }
 
@@ -47,8 +48,14 @@ page-pre-login {
   color: #000;
 }
 
-
-
 .keypad {
   text-align: center;
+}
+
+.white-button {
+  font-weight:700;
+  border-radius:100px 100px 100px 100px;
+  border: 1px solid #ffffff;
+  background-color: #40C5F2;
+  color: #ffffff;
 }

@@ -5,100 +5,75 @@
 </ion-header>
 
 <ion-content>
-
-    <ion-row>
-     <ion-col col-2>
-      <img src="assets/images/navigate.png" style="width: 20px !important; height: 20px !important;" alt="" class="icon" offset-2 (click)="CPage()">
-      </ion-col>
-      <ion-col col-2>
-       <label>Investment Chart</label>
-       </ion-col>
-     </ion-row>
-
-
-
-  <div class="" style="text-align:center">
-    <ion-row>
+  <ion-grid>
+    <ion-row text-center>
       <ion-col col-4>
         <button ion-button color="secondary" class="my-width" small>
           <b>LRC</b>
         </button>
       </ion-col>
-
       <ion-col col-4>
         <button ion-button color="default" class="my-width" small>
           <b>MRC</b>
         </button>
       </ion-col>
-
       <ion-col col-4>
         <button ion-button color="default" class="my-width" small>
           <b>HRC</b>
         </button>
       </ion-col>
     </ion-row>
-  </div>
-
-
-  <ion-row>
-  	<ion-col style="background-color:gray" text-center>
-      <label>10.1%<br>MYR 20</label>
-  	</ion-col>
-  </ion-row>
-
-
-  <ion-row>
-    <ion-col col-2>
-      <button ion-button color="secondary" class="my-width2" small>
-        <b>1D</b>
-      </button>
-    </ion-col>
-
-    <ion-col col-2>
-      <button ion-button color="default" class="my-width2" small>
-        <b>1W</b>
-      </button>
-    </ion-col>
-
-  <ion-col col-2>
-    <button ion-button color="default" class="my-width2" small>
-      <b>1M</b>
-    </button>
-    </ion-col>
-
-    	<ion-col col-2>
-    		<button ion-button color="secondary" class="my-width2" small >
-    			<b>6M</b>
-    		</button>
+    <ion-row>
+    	<ion-col style="background-color:gray" text-center>
+        <label>10.1%<br>MYR 20</label>
     	</ion-col>
-
-    	<ion-col col-2>
-    		<button ion-button color="default" class="my-width2" small>
-    			<b>1Y</b>
-    		</button>
-    	</ion-col>
-
-    <ion-col col-2>
-      <button ion-button color="default" class="my-width2" small>
-        <b>ALL</b>
-      </button>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2>
+        <button ion-button color="secondary" class="my-width2" small>
+          <b>1D</b>
+        </button>
       </ion-col>
-
-  </ion-row>
-
-  <span ion-fixed style="height: 100%; width: 100%;">
-  <div class="chartposition">
+      <ion-col col-2>
+        <button ion-button color="default" class="my-width2" small (click)="week()">
+          <b>1W</b>
+        </button>
+      </ion-col>
+      <ion-col col-2>
+        <button ion-button color="default" class="my-width2" small>
+          <b>1M</b>
+        </button>
+      </ion-col>
+      <ion-col col-2>
+        <button ion-button color="secondary" class="my-width2" small >
+        	<b>6M</b>
+        </button>
+      </ion-col>
+      <ion-col col-2>
+        <button ion-button color="default" class="my-width2" small>
+        	<b>1Y</b>
+        </button>
+      </ion-col>
+      <ion-col col-2>
+        <button ion-button color="default" class="my-width2" small>
+          <b>ALL</b>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <div class="chartposition">
         <div style="display: block;">
-        <canvas   baseChart width="320" height="300"
-                    [datasets]="lineChartData"
-                    [labels]="lineChartLabels"
-                    [options]="lineChartOptions"
-                    [colors]="lineChartColors"
-                    [legend]="lineChartLegend"
-                    [chartType]="lineChartType"
-                    (chartHover)="chartHovered($event)"
-                    (chartClick)="chartClicked($event)"></canvas>
-    </div>
-  </div>
-</span>
+            <canvas   baseChart width="320" height="300"
+                        [datasets]="lineChartData"
+                        [labels]="lineChartLabels"
+                        [options]="lineChartOptions"
+                        [colors]="lineChartColors"
+                        [legend]="lineChartLegend"
+                        [chartType]="lineChartType"
+                        (chartHover)="chartHovered($event)"
+                        (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+    </ion-row>
+  </ion-grid>
 </ion-content>

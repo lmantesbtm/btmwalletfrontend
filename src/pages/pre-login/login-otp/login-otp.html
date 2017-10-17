@@ -10,6 +10,7 @@
         </ion-col>
       </ion-row>
     </ion-grid>
-    <button id="page15-button14" style="border-radius:20px 20px 20px 20px;" class="button button-positive button-block" ion-button (click)="setPassword()">{{btnContent}}</button>
+    <button id="page15-button14" *ngIf="isPassword()" style="border-radius:20px 20px 20px 20px;" class="button button-positive button-block" ion-button (click)="setPassword()">{{btnContent}}</button>
+    <button id="page15-button14" *ngIf="isPassword()==false" style="border-radius:20px 20px 20px 20px;" class="button button-positive button-block" ion-button (click)="viewCtrl.dismiss()">{{btnContent}}</button>
   </form>
 </ion-content>
