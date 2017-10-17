@@ -18,7 +18,8 @@ import { ContactPage } from '../pages/contact/contact';
 import { LoginPinPage } from '../pages/pre-login/login-pin/login-pin';
 import { RegisterPage } from '../pages/register/register';
 import { LoginVerifyPage } from '../pages/pre-login/login-verify/login-verify'
-import { LoginPage } from '../pages/pre-login/login/login'
+import { LoginPage } from '../pages/pre-login/login/login';
+import { LoginOtpPage } from '../pages/pre-login/login-otp/login-otp';
 @Component({
   templateUrl: 'app.html'
 })
