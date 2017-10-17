@@ -31,6 +31,5 @@ export class LoginOtpPage {
 
   private isPassword(): boolean {
     return this.navParams.get("isPassword")
-    //return true;
   }
 }

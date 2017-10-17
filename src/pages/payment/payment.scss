@@ -2,7 +2,7 @@ page-payment {
   ion-modal,
   .show-page {
     // transparent black background overlay
-    background-color: rgba(0, 0, 0, .5) !important;
+    background-color: rgba(5, 4, 4, .0) !important;
     padding: 50px !important;
   }
   .toolbar-background {
@@ -26,6 +26,10 @@ page-payment {
     background-color: #000000;
     color: #ffffff;
   }
+}
+
+.remaining-box{
+  border-radius: 5px;
 }
 
 .rounded-border {
