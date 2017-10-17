@@ -9,8 +9,8 @@ page-investment-wallet {
     height: 30vh;
 
     img {
-      padding-top: 0px;
-      width: 50%;
+      padding-top: 33px;
+      width: 28%;
     }
   }
 
@@ -44,7 +44,7 @@ page-investment-wallet {
   }
 
   .coin-label {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .inv-total {
@@ -66,24 +66,21 @@ page-investment-wallet {
       color: #ffffff;
     }
 
-.inv-border {
-  border: 1px gray;
-  border-style: solid none;
-  margin-top: -1px;
-  height: 85px;
-}
+    .asc-total {
+      padding-top: 25px;
+    }
 
-.inv-center {
-  margin-top: auto;
-  margin-bottom: auto;
-}
+    .inv-total {
+      float: none;
+      font-size: 25px;
+      margin-top: 0;
+      font-weight: bold;
+    }
 
-.v-img {
-  vertical-align: middle;
-  margin-bottom: 0.75em;
-  width: 45%;
-}
+    .coin-label {
+      font-weight: normal;
+      font-size: 16px;
+    }
+  }
 
-.risk-label {
-  font-size: 24px;
 }

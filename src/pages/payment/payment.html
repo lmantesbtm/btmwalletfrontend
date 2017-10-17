@@ -4,7 +4,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ion-grid>
     <div class="wtop-container" *ngIf="withdraw" text-center padding-top>
       <div class="remaining-bg" text-center padding-left padding-right>
@@ -76,13 +76,6 @@
 
   </ion-grid>
   <ion-grid>
-    <ion-row>
-      <ion-col text-center>
-        <div class="rounded-border">
-          <ion-label>Total: MYR 100.00</ion-label>
-        </div>
-      </ion-col>
-    </ion-row>
     <page-payment-deposit *ngIf="deposit"></page-payment-deposit>
     <page-payment-withdrawal *ngIf="withdraw"></page-payment-withdrawal>
   </ion-grid>
