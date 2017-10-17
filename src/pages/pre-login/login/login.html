@@ -1,30 +1,25 @@
-<ion-content padding="true" class="manual-ios-statusbar-padding" class="login-back-color">
+<ion-content class="manual-ios-statusbar-padding" class="login-back-color">
   <login-logo></login-logo>
-  <h4 id="page11-heading1" class="login-h4">LOGIN</h4>
-  <body>
-  <div class="white-box" style="text-align:center; margin-left:7.5%;"></div>
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-</body>
-  <form id="page11-form2" class="list goleft" style="text-align:center; margin-left:15.0px;">
-    <ion-grid>
-      <ion-row>
-        <ion-col>
-          <input type="text" placeholder="Email ID / Mobile Number"  class="register-input-box">
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <input type="password" placeholder="Password"  class="register-input-box">
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </form>
-  <button id="page11-button10" class="button button-positive button-block green-button" ion-button (click)="login()">LOGIN</button>
-  <button id="page11-heading3" class="fgpassword_btn" (click)="forgetPassword()">Forgot Password?</button>
-  <button id="page11-heading3" class="faq_btn"  (click)="XXXXX()">FAQ</button>
+  <div class="white-box">
+    <h4 class="login-h4">LOGIN</h4>
+    <form text-center>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <input type="text" placeholder="Email ID / Mobile Number"  class="register-input-box">
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <input type="password" placeholder="Password"  class="register-input-box">
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+  <div class="login-btn-container" text-center>
+    <button class="button button-positive button-block green-button" ion-button (click)="login()">LOGIN</button>
+    <label class="fgpassword_btn" (click)="forgetPassword()">Forgot Password?</label>
+  </div>
+  <label class="faq_btn" (click)="faq()">FAQ</label>
 </ion-content>

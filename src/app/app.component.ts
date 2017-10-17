@@ -19,6 +19,10 @@ import { LoginPinPage } from '../pages/pre-login/login-pin/login-pin';
 import { RegisterPage } from '../pages/register/register';
 import { LoginVerifyPage } from '../pages/pre-login/login-verify/login-verify'
 import { LoginPage } from '../pages/pre-login/login/login'
+import { LoginSetPasswordPage } from '../pages/pre-login/login-set-password/login-set-password'
+import { PieChartPage } from '../pages/charts/piechart/piechart';
+import { LoginOtpPage } from '../pages/pre-login/login-otp/login-otp';
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -28,7 +32,7 @@ export class MyApp {
   @ViewChild('sidemenu') navCtrl: NavController;
 
   //rootPage:any = TabsPage;
-  rootPage: any = ChartsPage;
+  rootPage: any = RegisterPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

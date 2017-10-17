@@ -14,6 +14,7 @@ import { LoginVerifyPage } from '../pages/pre-login/login-verify/login-verify';
 import { LoginOtpPage } from '../pages/pre-login/login-otp/login-otp';
 import { LoginSetPasswordPage } from '../pages/pre-login/login-set-password/login-set-password';
 import { LoginPinPage } from '../pages/pre-login/login-pin/login-pin';
+import { LoginForgotPinPage } from '../pages/pre-login/login-forgot-pin/login-forgot-pin';
 import { RegisterPage } from '../pages/register/register';
 
 // Profile
@@ -67,6 +68,7 @@ import { PayPal } from '@ionic-native/paypal';
     LoginVerifyPage,
     LoginOtpPage,
     LoginSetPasswordPage,
+    LoginForgotPinPage,
     LoginPinPage,
 
     ProfilePage,
@@ -112,6 +114,7 @@ import { PayPal } from '@ionic-native/paypal';
     LoginVerifyPage,
     LoginOtpPage,
     LoginSetPasswordPage,
+    LoginForgotPinPage,
     LoginPinPage,
 
     ProfilePage,

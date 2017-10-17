@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, ViewController, NavParams } from 'ionic-angular';
+import { LoginPinPage } from '../pre-login/login-pin/login-pin';
 
 @IonicPage()
 @Component({
@@ -17,4 +18,8 @@ export class RegisterPage {
     console.log('ionViewDidLoad RegisterPage');
   }
 
+  showPin() {
+    let page = {prevPage: 'register'}
+    this.navCtrl.push(LoginPinPage, page)
+  }
 }

@@ -1,20 +1,43 @@
 page-login-pin {
 
 }
-.circle-pin {
-  border: 1px solid #1EA587;
-  border-radius: 50%;
-  width: 13px;
-  height: 13px;
-  display: inline-block;
-  margin-left: 5px;
-  margin-right: 5px;
+
+.pin-container {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  .circle-pins {
+    margin-bottom: 35px;
+
+    .circle-pin {
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+      width: 13px;
+      height: 13px;
+      display: inline-block;
+      margin-left: 5px;
+      margin-right: 5px;
+
+    }
+  }
+
+  .round-button{
+    background-color: #F4F4F4;
+    border: 1px solid #888888;
+    color: #888888;
+    font-size: 25px;
+    font-weight: 200;
+  }
 }
 
-.round-button{
-  background-color: #F4F4F4;
-  border: 1px solid #888888;
-  color: #888888;
-  font-size: 25px;
-  font-weight: 200;
+
+
+.forgot-pin {
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
 }
