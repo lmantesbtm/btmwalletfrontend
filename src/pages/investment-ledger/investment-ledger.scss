@@ -2,27 +2,86 @@ page-investment-ledger {
 
 }
 
-.grid-header {
-  font-weight: bold;
+.inv-container {
+
+  .col {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .inv-header {
+    height: 40px;
+
+    .row {
+      margin-top: 0.75em;
+
+      label {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .blue-header-bg {
+    .row {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    label {
+      font-size: 12px;
+      display: inline-block;
+    }
+  }
+
+  .inv-content {
+    // Background color for even rows
+    .item:nth-of-type(even) {
+      background: #f4f4f4;
+    }
+
+    .row {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .col {
+        margin: auto;
+
+        label {
+          display: inline-block;
+        }
+      }
+    }
+
+    .date {
+      font-weight: bold;
+    }
+
+    .inv-id {
+      font-style: italic;
+      font-weight: normal;
+    }
+
+    .amount, .inv-coin {
+      font-weight: bold;
+      font-size: 16px
+    }
+
+    .inv-coin {
+      color: #40c5f2;
+    }
+
+    .item, .item-inner {
+      padding: 0;
+    }
+
+  }
 }
 
-.col {
-  font-size: 13px;
-  white-space: nowrap;
+.active_label {
+  color: #40c5f2;
+  border-bottom: 3px solid #40c5f2;
 }
 
-.align-item {
-  padding-left: 0;
-}
-
-.trans-id {
-  padding-left: 10px;
-}
-
-.amount {
-  padding-left: 13px;
-}
-
-.investment {
-  padding-left: 20px;
+.inactive_label {
+  color: #000000;
 }

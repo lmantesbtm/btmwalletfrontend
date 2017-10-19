@@ -3,49 +3,72 @@
     <ion-title>Transaction History</ion-title>
   </ion-navbar>
 </ion-header>
-<ion-content padding>
-  <ion-grid>
-    <ion-row>
-      <ion-col col-4>
-        <button type="button" name="button" ion-button full (click)="investment()">Investment</button>
-      </ion-col>
-      <ion-col col-4>
-        <button type="button" name="button" ion-button full (click)="deposit()">Deposit</button>
-      </ion-col>
-      <ion-col col-4>
-        <button type="button" name="button" ion-button full (click)="withdraw()">Withdraw</button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-  <ion-grid>
-    <ion-list>
-      <ion-item class="">
+<ion-content>
+  <div class="inv-container">
+    <div class="inv-header th-padding" text-center>
+      <ion-grid>
         <ion-row>
-          <ion-col col-2>
-            AUG<br>26
+          <ion-col col-4>
+            <label (click)="setActive('1')" [ngClass]="{'active_label': activeLabel == 1}">Investment</label>
           </ion-col>
-          <ion-col col-7 class="trans-h">
-            CIMB BANK <br><span style="font-style: italic; font-size: 9px;"> withdraw </span>
+          <ion-col col-4>
+            <label (click)="setActive('2')" [ngClass]="{'active_label': activeLabel == 2}">Deposit</label>
           </ion-col>
-          <ion-col col-3 class="amount-h">
-            MYR 13.50
+          <ion-col col-4>
+            <label (click)="setActive('3')" [ngClass]="{'active_label': activeLabel == 3}">Withdraw</label>
           </ion-col>
         </ion-row>
-      </ion-item>
-      <ion-item class="">
-        <ion-row>
-          <ion-col col-2>
-            AUG<br>26
-          </ion-col>
-          <ion-col col-7 class="trans-h">
-            CIMB BANK<br><span style="font-style: italic; font-size: 9px;"> withdraw </span>
-          </ion-col>
-          <ion-col col-3 class="amount-h">
-            MYR 13.50
-          </ion-col>
-        </ion-row>
-      </ion-item>
-    </ion-list>
-  </ion-grid>
+      </ion-grid>
+    </div>
+    <div class="blue-header-bg" text-center>
+      <ion-row>
+        <ion-col col-3 text-left>
+          <label>Date</label>
+        </ion-col>
+        <ion-col col-5 text-left>
+          <label>Investment</label>
+        </ion-col>
+        <ion-col col-4 text-center>
+          <label>Amount</label>
+        </ion-col>
+      </ion-row>
+    </div>
+    <div class="inv-content">
+      <ion-grid>
+        <ion-list>
+          <ion-item *ngFor='let data of listData; let idx = index'>
+            <ion-row>
+              <ion-col col-3 class="date">
+                <label>{{ data.date }}
+                  <br>
+                  <span class="inv-id" *ngIf="activeLabel != 1">{{ data.tx_id }}</span>
+                </label>
+              </ion-col>
+              <ion-col col-5 class="date" text-left>
+                <label *ngIf="activeLabel == 1">
+                  {{ data.inv_label }} Invest
+                  <br>
+                  <span class="inv-id">{{ data.tx_id }}</span>
+                </label>
+                <label *ngIf="activeLabel != 1" class="capitalize">
+                  {{ objKeys[activeLabel - 1] }}
+                  <br>
+                  <span class="inv-id" >{{ data.bank }}</span>
+                </label>
+              </ion-col>
+              <ion-col col-4 class="amount" text-right>
+                <label *ngIf="activeLabel == 1">
+                  {{ data.coin }}
+                  <span *ngIf="data.inv_label == 'Low'"> LRC</span>
+                  <span *ngIf="data.inv_label == 'Medium'"> MRC </span>
+                  <span *ngIf="data.inv_label == 'High'"> HRC </span>
+                </label>
+                <label *ngIf="activeLabel != 1">MYR {{ data.amount | number: '1.2-2'}}</label>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+        </ion-list>
+      </ion-grid>
+    </div>
+  </div>
 </ion-content>
-<tabs-footer></tabs-footer>
