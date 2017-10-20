@@ -2,11 +2,22 @@ page-transaction-history {
 
 }
 
-.trans-h {
-  padding-left: 60px;
-}
-
 .ledger_button {
   background-color: transparent;
   color: #1D2128;
+
+.th-padding {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 2px solid #40c5f2;
+  height: 50px !important;
+}
+
+.blue-vertical {
+  width: 30vw;
+  background-color: #40c5f2;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }

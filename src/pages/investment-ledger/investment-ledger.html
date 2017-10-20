@@ -4,59 +4,56 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <ion-grid class="grid-header">
-    <ion-row>
-      <ion-col col-2>
-        Date
-      </ion-col>
-      <ion-col col-4>
-        Transaction Id
-      </ion-col>
-      <ion-col col-3>
-        Amount
-      </ion-col>
-      <ion-col col-3>
-        Invesment
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-  <ion-grid>
-    <ion-list>
-      <ion-item class="align-item">
-        <ion-row>
-          <ion-col col-2>
-            AUG<br>26
-          </ion-col>
-          <ion-col col-4 class="trans-id">
-            0010-inigm
-          </ion-col>
-          <ion-col col-3 class="amount">
-            MYR 13.50
-          </ion-col>
-          <ion-col col-3 class="investment">
-            322 HRC
-          </ion-col>
-        </ion-row>
-      </ion-item>
-      <ion-item class="align-item">
-        <ion-row>
-          <ion-col col-2>
-            AUG<br>26
-          </ion-col>
-          <ion-col col-4 class="trans-id">
-            0010-inigm
-          </ion-col>
-          <ion-col col-3 class="amount">
-            MYR 13.50
-          </ion-col>
-          <ion-col col-3 class="investment">
-            322 HRC
-          </ion-col>
-        </ion-row>
-      </ion-item>
-    </ion-list>
-  </ion-grid>
+<ion-content>
+  <div class="inv-container">
+    <div class="inv-header" text-center>
+      <ion-row>
+        <ion-col col-4>
+          <label (click)="setActive('1')" [ngClass]="{'active_label': activeLabel == 1}">LRC</label>
+        </ion-col>
+        <ion-col col-4>
+          <label (click)="setActive('2')" [ngClass]="{'active_label': activeLabel == 2}">MRC</label>
+        </ion-col>
+        <ion-col col-4>
+          <label (click)="setActive('3')" [ngClass]="{'active_label': activeLabel == 3}">HRC</label>
+        </ion-col>
+      </ion-row>
+    </div>
+    <div class="blue-header-bg" text-center>
+      <ion-row>
+        <ion-col col-4 text-left>
+          <label>Date<br>Invest Id</label>
+        </ion-col>
+        <ion-col col-4>
+          <label>Amount</label>
+        </ion-col>
+        <ion-col col-4 text-right>
+          <label>Investment</label>
+        </ion-col>
+      </ion-row>
+    </div>
+    <div class="inv-content" >
+      <ion-grid>
+        <ion-list>
+          <ion-item text-center *ngFor='let data of listData; let idx = index'>
+            <ion-row>
+              <ion-col col-4 text-left>
+                <label class="date">{{ data.date }}
+                  <br>
+                  <span class="inv-id">{{ data.tx_id }}</span>
+                </label>
+              </ion-col>
+              <ion-col col-4>
+                <label class="amount">MYR {{ data.amount | number : '1.2-2' }}</label>
+              </ion-col>
+              <ion-col col-4 text-right>
+                <label class="inv-coin">{{ data.coin }} {{ coinLabel }}</label>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+        </ion-list>
+      </ion-grid>
+    </div>
+  </div>
+  <div class="blue-vertical"></div>
 </ion-content>
-
-<tabs-footer></tabs-footer>

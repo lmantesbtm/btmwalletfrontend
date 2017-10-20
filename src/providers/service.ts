@@ -20,4 +20,8 @@ export class BTProvider{
                 .map(res => res.json());
   }
 
+  showInvesment(){
+    return this.http.get('/investment')
+                .map(res => res.json())
+  }
 }
