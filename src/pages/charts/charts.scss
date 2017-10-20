@@ -37,6 +37,7 @@ page-charts {
   font-size: 16px;
   color: #202A3F;
   font-weight: bold;
+  text-align: center;
 }
 
 .risk-values {
@@ -45,6 +46,7 @@ page-charts {
     color: #40C5f2;
     margin: 0;
     font-weight: 700;
+    margin-bottom: 0px;
   }
 }
 
@@ -54,6 +56,8 @@ page-charts {
     padding: 0;
     font-size: 16px;
     font-weight: 200;
+    margin-top: 0px;
+    margin-bottom: 5px;
   }
 }
 

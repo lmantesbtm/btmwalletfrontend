@@ -36,7 +36,7 @@ export class ContactPage {
   };
   public lineChartColors:Array<any> = [
     { // grey
-      backgroundColor:'#40C5F2',
+      backgroundColor:'#29DAB2',
       borderColor: 'rgba(0,0,0,0)',
       pointBackgroundColor: 'rgba(0,0,0,0)',
       pointBorderColor: '#fff',
