@@ -1,9 +1,11 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { BTProvider } from '../../providers/service';
 
 @Component({
   selector: 'page-investment-ledger',
   templateUrl: 'investment-ledger.html',
+  providers: [ BTProvider ],
 })
 
 export class InvestmentLedgerPage {
@@ -15,7 +17,9 @@ export class InvestmentLedgerPage {
   public listData: any;
   public coinLabelArr: Array<string> = ['', "LRC", "MRC", "HRC"]
   public coinLabel: string;
+  public data: any;
 
+  /*
   public data: any = {
     LRC : [{
         date: '01/29/17',
@@ -71,9 +75,13 @@ export class InvestmentLedgerPage {
         coin: 15,
       }],
   }
+  */
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-
+  constructor(public navCtrl: NavController, public navParams: NavParams, private btProvider: BTProvider) {
+    this.btProvider.showInvesment()
+        .subscribe(data => {
+            this.data = data;
+        })
   }
 
   ionViewDidLoad() {
