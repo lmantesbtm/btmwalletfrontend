@@ -36,15 +36,15 @@ export class ContactPage {
   };
   public lineChartColors:Array<any> = [
     { // grey
-      backgroundColor:'#00FFFF',
+      backgroundColor:'#29DAB2',
       borderColor: 'rgba(0,0,0,0)',
       pointBackgroundColor: 'rgba(0,0,0,0)',
       pointBorderColor: '#fff',
-      pointHoverBackgroundColor: '#fff',
-      pointHoverBorderColor: 'rgba(148,159,177,0.8)',
+      pointHoverBackgroundColor: '#FF6E6E',
+      pointHoverBorderColor: 'rgba(255,255,255,0.5)',
       spanGaps: false,
-      pointHoverRadius: 5,
-      pointHoverBorderWidth: 2,
+      pointHoverRadius: 10,
+      pointHoverBorderWidth: 6,
       pointRadius: 1,
       pointHitRadius: 10,
     },
@@ -104,42 +104,42 @@ export class ContactPage {
 
   day() {
     this.lineChartData = [{
-      data: [5, 59, 80, 300, 56, 55, 30, 180, 65, 9, 80, 81, 56, 5, 90, 10, 5, 59, 80, 1, 56, 55, 30, 180, 65, 9, 80, 81, 56, 5, 90, 10],
+      data: [140, 158, 178, 246, 237, 231, 200, 180, 150, 170, 180, 161, 156, 137, 190, 170, 150, 59, 80, 67, 56, 55, 30, 180, 65, 9, 80, 81, 56, 64, 90, 10],
       label: '',
     }]
   }
 
   week() {
     this.lineChartData = [{
-      data: [5, 59, 80, 1, 56, 55, 30, 180, 65, 9, 80, 81, 56, 5, 90, 20],
+      data: [140, 135, 120, 100, 110, 90, 120, 155, 157, 157, 168, 181, 156, 175, 190, 185],
       label: '',
     }]
   }
 
   month() {
     this.lineChartData = [{
-      data: [5, 59, 80, 1, 56, 55, 30, 180, 65, 9, 80, 81, 56, 5, 90, 100],
+      data: [140, 159, 180, 111, 156, 155, 130, 180, 165, 149, 180, 185, 166, 185, 190, 186],
       label: '',
     }]
   }
 
   sixmonths() {
     this.lineChartData = [{
-      data: [5, 59, 80, 1, 56, 55, 30, 180, 65, 9, 80, 81, 56, 5, 90, 200],
+      data: [140, 156, 145, 135, 156, 155, 130, 180, 165, 174, 180, 181, 176, 165, 180, 200],
       label: '',
     }]
   }
 
   year() {
     this.lineChartData = [{
-      data: [5, 59, 80, 20, 56, 55, 30, 180, 65, 9, 80, 81, 56, 5, 90, 2000],
+      data: [140, 159, 180, 170, 156, 155, 140, 180, 165, 190, 180, 171, 156, 155, 170, 190],
       label: '',
     }]
   }
 
   all() {
     this.lineChartData = [{
-      data: [5, 59, 80, 20, 56, 55, 30, 180, 65, 9, 80, 81, 56, 5, 90, 5000],
+      data: [140, 146, 150, 155, 156, 158, 162, 165, 168, 170, 180, 185, 192, 197, 200, 230],
       label: '',
     }]
   }
