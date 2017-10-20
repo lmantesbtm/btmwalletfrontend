@@ -32,7 +32,7 @@ export class Odin {
   @ViewChild('sidemenu') navCtrl: NavController;
 
   //rootPage:any = TabsPage;
-  rootPage: any = TransactionHistoryPage;
+  rootPage: any = InvestmentLedgerPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
