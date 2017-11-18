@@ -19,6 +19,9 @@ import { RegisterPage } from '../pages/register/register';
 // Profile
 import { ProfilePage } from '../pages/profile/profile';
 
+// Settings
+import { SettingsPage } from '../pages/settings/settings';
+
 // Payment
 import { PaymentPage } from '../pages/payment/payment';
 import { InvestmentLedgerPage } from '../pages/investment-ledger/investment-ledger';
@@ -39,6 +42,7 @@ import { TabsFooterComponent } from '../components/tabs-footer/tabs-footer';
 import { ChartsPage } from '../pages/charts/charts';
 import { ChartsModule } from 'ng2-charts';
 import { GraphsPage } from '../pages/charts/graphs/graphs';
+import { PieChartPage } from '../pages/charts/piechart/piechart';
 
 // Double Click
 import { DoubleclickDirective } from '../directives/doubleclick/doubleclick';
@@ -49,6 +53,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { BTProvider } from '../providers/braintree';
 import { VisaProvider } from '../providers/visa/visa';
+import { PayPal } from '@ionic-native/paypal';
 
 @NgModule({
   declarations: [
@@ -66,6 +71,8 @@ import { VisaProvider } from '../providers/visa/visa';
 
     ProfilePage,
 
+    SettingsPage,
+
     PaymentPage,
     InvestmentLedgerPage,
     InvestmentWalletPage,
@@ -77,6 +84,7 @@ import { VisaProvider } from '../providers/visa/visa';
 
     ChartsPage,
     GraphsPage,
+    PieChartPage,
 
     LoginLogoComponent,
     NavbarComponent,
@@ -107,6 +115,7 @@ import { VisaProvider } from '../providers/visa/visa';
     LoginPinPage,
 
     ProfilePage,
+    SettingsPage,
 
     PaymentPage,
     InvestmentLedgerPage,
@@ -118,6 +127,7 @@ import { VisaProvider } from '../providers/visa/visa';
 
     ChartsPage,
     GraphsPage,
+    PieChartPage,
 
     LoginLogoComponent,
     NavbarComponent,
@@ -130,7 +140,8 @@ import { VisaProvider } from '../providers/visa/visa';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     BTProvider,
-    VisaProvider
+    VisaProvider,
+    PayPal
   ]
 })
 export class AppModule {}

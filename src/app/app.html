@@ -3,12 +3,12 @@
   to another component/page
   https://forum.ionicframework.com/t/solved-child-page-specific-menu/76412/6
 -->
-<ion-menu side="left" [content]="sidemenu" persistent="true" >
+<ion-menu side="left" [content]="sidemenu" persistent="true" id="sideMenu">
   <ion-content class="menu-bg">
     <ion-grid style="color:white">
       <ion-row>
         <ion-col col-3>
-          <img src="assets/images/white_icon/icon-white-11.png" alt="" class="menu-setting-btn">
+          <img src="assets/images/white_icon/icon-white-11.png" alt="" class="menu-setting-btn" (click)="settings()" menuClose>
         </ion-col>
         <ion-col col-auto>
         </ion-col>

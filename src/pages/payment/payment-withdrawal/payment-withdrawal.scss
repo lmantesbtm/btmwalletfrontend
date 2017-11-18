@@ -5,3 +5,74 @@ page-payment-withdrawal {
 .no-scroll .scroll-content {
   overflow: hidden;
 }
+
+.wtop-container {
+  font-size: 18px;
+  font-weight: bold;
+
+  .remaining-bg {
+    background-color: #333d4d;
+    color: #ffffff;
+    height: 30px;
+    margin-top: 5px;
+
+    .col {
+      font-size: 18px;
+      font-weight: normal;
+      padding: 0;
+      color: #ffffff;
+
+      .remaining-box {
+        border: 1px solid #1ea587;
+        width: 70px;
+        height: 30px;
+        margin: 0 auto;
+        padding-top: 0.15em;
+      }
+    }
+  }
+}
+
+.wbot-container {
+  .border-img {
+    border: 1px solid #1ea587;
+    border-radius: 35px;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+    .coin-container {
+      width: 100%;
+
+      img {
+        width: 55px;
+        height: 55px;
+        float: left;
+        margin-right: 5px;
+        margin-left: 10px;
+        padding: 3px;
+      }
+
+      label {
+        font-size: 18px;
+        position: relative;;
+        top: 0.25em;
+      }
+    }
+
+    .add-bank {
+      margin: 0 auto;
+      height: 30px;
+
+      img {
+        width: 25px;
+        vertical-align: middle;
+        margin-top: 0.25em;
+      }
+
+      label {
+        margin-top: 0.25em;
+      }
+    }
+  }
+}

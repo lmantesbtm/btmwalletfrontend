@@ -3,9 +3,27 @@ page-profile {
 }
 
 .profile-image {
-  width: 50%
+  width: 45%;
+  padding-top: 15px;
 }
 
 p {
-  padding-left: 10px;
+  padding-left: 15px;
+  font-size: 16px;
+  color: #000;
+}
+
+.grey-info {
+  padding-left: 15px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  color: #aaa;
+  border-bottom: 1px solid #000;
+}
+
+.regular-button {
+  padding-left: 15px;
+  font-size: 16px;
+  color: #202A3F;
+  background-color:#fff;
 }
